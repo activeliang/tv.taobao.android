@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.newcart.itemview.NewShopCartItemInfoView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/new_shop_cart_item_info_bg" android:layout_width="@dimen/dp_880" android:layout_height="@dimen/dp_240">
+    <RelativeLayout android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240">
+        <com.tvtaobao.android.ui3.widget.RoundImageView android:id="@+id/iv_toutu" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240" android:src="@drawable/new_shop_cart_img_default" app:ui3wares_ltRadius="@dimen/dp_6" app:ui3wares_lbRadius="@dimen/dp_6"/>
+        <ImageView android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_240" android:src="@drawable/new_shop_cart_toutu_shadow" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_tag1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_4" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_tag2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_4" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_tag3" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/goods_view" android:layout_width="@dimen/dp_472" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" layout="@layout/layout_new_shop_cart_item_info"/>
+    <View android:background="#dadcdf" android:focusable="false" android:layout_width="0.5dp" android:layout_height="@dimen/dp_240" android:layout_below="@+id/tv_price" android:layout_alignRight="@+id/tv_num"/>
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_240" android:divider="@drawable/bg_button_focus">
+        <com.yunos.tvtaobao.newcart.itemview.NewShopCartButton android:textSize="@dimen/sp_20" android:textColor="@color/new_shop_cart_unselect" android:gravity="center" android:id="@+id/tv_modify" android:background="@drawable/new_shop_cart_button_bg" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="修改" android:layout_weight="1"/>
+        <com.yunos.tvtaobao.newcart.itemview.NewShopCartButton android:textSize="@dimen/sp_20" android:textColor="@color/new_shop_cart_unselect" android:gravity="center" android:id="@+id/tv_details" android:background="@drawable/new_shop_cart_button_bg" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="详情" android:layout_weight="1"/>
+        <com.yunos.tvtaobao.newcart.itemview.NewShopCartButton android:textSize="@dimen/sp_20" android:textColor="@color/new_shop_cart_unselect" android:gravity="center" android:id="@+id/tv_delete" android:background="@drawable/new_shop_cart_button_bg" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="删除" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#dadcdf" android:focusable="false" android:layout_width="0.5dp" android:layout_height="@dimen/dp_240" android:layout_below="@+id/tv_price" android:layout_alignRight="@+id/tv_num"/>
+    <com.yunos.tvtaobao.newcart.itemview.NewShopCartGoodsSelectView android:layout_gravity="center" android:id="@+id/new_shop_cart_select" android:focusable="true" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_240"/>
+</com.yunos.tvtaobao.newcart.itemview.NewShopCartItemInfoView>

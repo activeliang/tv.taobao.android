@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#e60e1215" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_skuinfo_layout" android:layout_width="@dimen/dp_1114" android:layout_height="@dimen/dp_464" android:layout_marginTop="@dimen/dp_84">
+        <android.support.constraint.ConstraintLayout android:orientation="vertical" android:background="@drawable/bg_skuinfo_goods" android:layout_width="@dimen/dp_352" android:layout_height="match_parent">
+            <ImageView android:id="@+id/sku_item_image" android:background="@color/bs_up_update_white" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_320" android:layout_marginTop="@dimen/dp_16" android:scaleType="fitCenter" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/sku_item_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:maxLines="2" app:layout_constraintLeft_toLeftOf="@+id/sku_item_image" app:layout_constraintRight_toRightOf="@+id/sku_item_image" app:layout_constraintTop_toBottomOf="@+id/sku_item_image"/>
+            <TextView android:textSize="@dimen/sp_36" android:textColor="#ffffff" android:id="@+id/sku_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" app:layout_constraintLeft_toLeftOf="@+id/sku_item_title" app:layout_constraintTop_toBottomOf="@+id/sku_item_title"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/sku_price_presale" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:maxLines="1" app:layout_constraintBottom_toBottomOf="@+id/sku_price" app:layout_constraintLeft_toRightOf="@+id/sku_price"/>
+        </android.support.constraint.ConstraintLayout>
+        <ScrollView android:id="@+id/sku_prop_scrollview" android:focusable="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/sku_prop_layout" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_18" android:paddingRight="@dimen/dp_29" android:paddingBottom="@dimen/dp_24" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/layout_focus_background" android:layout_width="@dimen/dp_544" android:layout_height="@dimen/dp_68" android:layout_marginTop="@dimen/dp_22">
+        <Button android:textSize="@dimen/sp_32" android:textColor="@drawable/color_sku_ok_btn_textcolor" android:gravity="center" android:layout_gravity="center" android:id="@+id/sku_done_text_view" android:background="@drawable/bg_sku_ok_selected_btn" android:layout_width="@dimen/dp_540" android:layout_height="@dimen/dp_64" android:text="确定"/>
+    </FrameLayout>
+</LinearLayout>

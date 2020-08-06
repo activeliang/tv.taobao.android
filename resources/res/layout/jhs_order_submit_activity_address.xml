@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.juhuasuan.view.AddressView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/jhs_sku_choose_n" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_f1">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_20" android:layout_width="@dimen/dp_251" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_f1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@color/jhs_address_username" android:id="@+id/address_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/jhs_address_font_size" android:textColor="@color/jhs_address_area" android:id="@+id/address_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/jhs_address_detail" android:id="@+id/address_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:maxLines="2" android:lines="2" android:includeFontPadding="false"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+            <TextView android:textSize="@dimen/jhs_address_font_size" android:textColor="@color/jhs_address_area" android:id="@+id/address_province" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/jhs_address_font_size" android:textColor="@color/jhs_address_area" android:id="@+id/address_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/jhs_address_font_size" android:textColor="@color/jhs_address_area" android:id="@+id/address_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.yunos.tvtaobao.juhuasuan.view.AddressView>

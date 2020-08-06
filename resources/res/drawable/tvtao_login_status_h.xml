@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_5"/>
+                    <stroke android:width="@dimen/dp_2" android:color="@color/colorWhite"/>
+                    <solid android:color="#26001122"/>
+                </shape>
+            </item>
+            <item android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_4"/>
+                    <gradient android:startColor="#ff9d21" android:endColor="#ff6621" android:angle="0"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_4"/>
+                    <stroke android:width="@dimen/dp_1_3" android:color="#80ffffff"/>
+                    <solid android:color="#26001122"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

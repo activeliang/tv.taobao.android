@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.takeoutbundle.view.TOOrderDetailItemFocusLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="@dimen/dp_260" android:layout_height="wrap_content">
+    <com.yunos.tvtaobao.biz.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cv_radius="@dimen/dp_12" app:backgroundColor="#ffffff">
+        <LinearLayout android:orientation="vertical" android:id="@+id/shop_item_info_layout" android:layout_width="@dimen/dp_260" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/dp_260" android:layout_height="@dimen/dp_260">
+                <ImageView android:id="@+id/take_out_order_detail_product_logo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_white" android:ellipsize="end" android:id="@+id/take_out_order_detail_product_sku" android:background="#80202020" android:paddingLeft="@dimen/dp_12" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_12" android:paddingBottom="@dimen/dp_2" android:layout_width="@dimen/dp_260" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/corner_shape_only_bottom" android:layout_width="@dimen/dp_260" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_black" android:ellipsize="end" android:id="@+id/take_out_order_detail_product_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_46" android:maxLines="1"/>
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@color/ytm_black" android:gravity="end" android:id="@+id/take_out_order_detail_product_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:layout_alignBaseline="@+id/take_out_order_detail_product_name" android:layout_alignParentRight="true" android:textAlignment="textEnd"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/take_out_order_detail_product_count" android:layout_alignBaseline="@+id/take_out_order_detail_product_name"/>
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@color/to_highlight_color" android:id="@+id/take_out_order_detail_product_price" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_12" android:layout_below="@+id/take_out_order_detail_product_name"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_gray" android:id="@+id/take_out_order_detail_product_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_toRightOf="@+id/take_out_order_detail_product_price" android:layout_alignBaseline="@+id/take_out_order_detail_product_price"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yunos.tvtaobao.biz.widget.CardView>
+</com.yunos.tvtaobao.takeoutbundle.view.TOOrderDetailItemFocusLayout>

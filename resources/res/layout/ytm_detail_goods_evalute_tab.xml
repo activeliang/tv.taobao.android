@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.detailbundle.view.DetailEvaluatecItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@color/ytsdk_detail_evaluate_tab_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp_24" android:textColor="@color/ytsdk_detail_evaluate_font_color" android:id="@+id/evaluate_tab_evaluatedes" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+    <TextView android:textSize="@dimen/sp_24" android:textColor="@color/ytsdk_detail_evaluate_font_color" android:id="@+id/evaluate_tab_evaluatecount" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:singleLine="true" android:includeFontPadding="false"/>
+</com.yunos.tvtaobao.detailbundle.view.DetailEvaluatecItemView>

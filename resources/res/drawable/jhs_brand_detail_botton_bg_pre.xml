@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="@color/jhs_brand_detail_sold_background"/>
+    <corners android:bottomLeftRadius="@dimen/dp_5" android:bottomRightRadius="@dimen/dp_5"/>
+</shape>

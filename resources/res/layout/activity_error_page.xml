@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp_48" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_144" android:text="你访问的内容过期啦～" android:includeFontPadding="false"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/layout_shop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_108">
+        <View android:background="@color/ytsdk_detail_scroll_divider_color" android:layout_width="0dp" android:layout_height="@dimen/dp_1_3" android:layout_marginLeft="@dimen/dp_60" android:layout_marginRight="@dimen/dp_24" android:layout_weight="1" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/like" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_32" android:textColor="#ffffff" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你可能还喜欢"/>
+        <View android:background="@color/ytsdk_detail_scroll_divider_color" android:layout_width="0dp" android:layout_height="@dimen/dp_1_3" android:layout_marginLeft="@dimen/dp_24" android:layout_marginRight="@dimen/dp_60" android:layout_weight="1" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <com.yunos.tvtaobao.biz.widget.TvRecyclerView android:id="@+id/recyclerview_guesslike" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_46" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_46"/>
+</LinearLayout>

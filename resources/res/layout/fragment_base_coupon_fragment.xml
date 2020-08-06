@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tvtaobao.android.recyclerviews.TvRecyclerViewB android:id="@+id/rv_my_coupon" android:paddingLeft="@dimen/dp_80" android:paddingTop="@dimen/dp_136" android:paddingRight="@dimen/dp_64" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/fl_empty_tip" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_32" android:textColor="#4dffffff" android:layout_gravity="center_horizontal" android:id="@+id/tv_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_347"/>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

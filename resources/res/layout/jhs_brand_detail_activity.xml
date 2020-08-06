@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/HomeContainer" android:background="@drawable/jhs_brand_category_bj_xml" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="top" android:background="@drawable/jhs_brand_detail_top_bj" android:layout_width="match_parent" android:layout_height="@dimen/dp_100">
+        <TextView android:textSize="@dimen/dp_40" android:textColor="@color/jhs_white" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/brandName" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/jhs_white" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/brandTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/jhs_white" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/brandDiscounter" android:background="#800227" android:paddingLeft="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager android:id="@+id/items_parent" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.juhuasuan.view.BrandFocusGallery android:gravity="center_vertical" android:id="@+id/items" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_64" android:spacing="@dimen/dp_166"/>
+        <ImageView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/jhs_subject_left_shadow" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/jhs_subject_right_shadow" android:scaleType="fitXY"/>
+        <RelativeLayout android:id="@+id/no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jhs_na_data_icon" android:scaleType="centerCrop" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="@dimen/dp_24" android:textColor="@color/jhs_white" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/jhs_brand_list_null" android:singleLine="true" android:layout_below="@+id/image" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager>
+</LinearLayout>

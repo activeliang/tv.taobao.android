@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/top_gradian_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_256">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_64" android:layout_marginTop="@dimen/dp_32" android:layout_marginRight="@dimen/dp_64" android:text="正在播放"/>
+    <TextView android:textSize="@dimen/sp_30" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tv_name_pop_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_64" android:layout_marginRight="@dimen/dp_64" android:singleLine="true"/>
+</LinearLayout>

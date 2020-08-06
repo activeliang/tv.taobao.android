@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/order_info_error_prompt_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/order_info_error_prompt" android:visibility="gone" android:layout_width="@dimen/dp_420" android:layout_height="@dimen/dp_420" android:layout_marginLeft="@dimen/dp_430" android:layout_marginTop="@dimen/dp_160"/>
+    <ImageView android:id="@+id/order_info_error_qrcode" android:background="@drawable/bg_item_round_corners" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400" android:layout_marginLeft="@dimen/dp_304" android:layout_marginTop="@dimen/dp_188"/>
+    <ImageView android:id="@+id/order_info_error_phone" android:visibility="gone" android:layout_width="@dimen/dp_256" android:layout_height="@dimen/dp_432" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_156" android:src="@drawable/prompt_cellphone_code" android:layout_toRightOf="@+id/order_info_error_qrcode"/>
+</RelativeLayout>

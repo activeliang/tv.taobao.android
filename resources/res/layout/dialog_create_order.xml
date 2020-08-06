@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/bg_voice_card_mark" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_450" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/voice_card_qrcode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_364" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_128" android:layout_marginBottom="@dimen/dp_112" android:src="@drawable/item_zhifubao" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/sp_32" android:textColor="#ffffff" android:id="@+id/voice_card_qrcode_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_228" android:layout_marginBottom="@dimen/dp_136" android:text="亲，请打开【支付宝】扫码付款" android:layout_alignParentBottom="true" android:lineSpacingExtra="0sp"/>
+        <ImageView android:id="@+id/voice_card_qrcode" android:background="@drawable/bg_qrcode" android:padding="@dimen/dp_14" android:layout_width="@dimen/dp_332" android:layout_height="@dimen/dp_332" android:layout_marginRight="@dimen/dp_176" android:layout_marginBottom="@dimen/dp_32" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/voice_card_order_reply_layout" android:visibility="gone" android:layout_width="1160dp" android:layout_height="@dimen/dp_56" android:layout_marginLeft="60dp" android:layout_marginBottom="218dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_56" android:src="@drawable/head_tao"/>
+        <com.tvtaobao.voicesdk.view.AutoTextView android:id="@+id/voice_card_order_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" app:textSize="@dimen/sp_22" app:textcolor="#ffffff" app:lines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/voice_card_order_layout" android:paddingLeft="60dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="180dp" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true">
+        <com.tvtaobao.android.ui3.widget.RoundImageView android:id="@+id/voice_card_order_image" android:layout_width="170dp" android:layout_height="170dp" app:ui3wares_ltRadius="@dimen/dp_6" app:ui3wares_lbRadius="@dimen/dp_6"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_create_order_product" android:paddingLeft="30dp" android:paddingRight="28dp" android:layout_width="500dp" android:layout_height="170dp">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#a8bfd4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品信息"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/voice_card_order_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1" android:lineSpacingExtra="0sp"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/voice_card_order_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="0sp"/>
+            <TextView android:textSize="20sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/voice_card_order_postage" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="0sp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="#ff4400" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_8" android:text="实付："/>
+                <TextView android:textSize="@dimen/sp_36" android:textColor="#ff4400" android:id="@+id/voice_card_order_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:layout_gravity="bottom" android:id="@+id/img_rebate_tag" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_10" android:src="@drawable/tag_fanli"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="#ff4400" android:gravity="bottom" android:id="@+id/txt_rebate" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_9"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/voice_card_order_address_layout" android:layout_width="442dp" android:layout_height="170dp" android:layout_marginLeft="28dp">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#a8bfd4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认收货地址"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:id="@+id/voice_card_order_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:lineSpacingExtra="8sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/voice_card_error_prompt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="180dp" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/icon_bill_other_problem" android:layout_width="210dp" android:layout_height="180dp"/>
+    </LinearLayout>
+</RelativeLayout>

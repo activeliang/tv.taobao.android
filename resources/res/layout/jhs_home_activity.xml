@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/HomeContainer" android:background="@drawable/jhs_normal_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.yunos.tvtaobao.juhuasuan.view.HorizontalListView android:gravity="center" android:id="@+id/category_List_bar" android:focusable="true" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_23" android:layout_marginRight="@dimen/dp_23" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:divider="@color/jhs_background" android:dividerHeight="0px" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_f70"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pre_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

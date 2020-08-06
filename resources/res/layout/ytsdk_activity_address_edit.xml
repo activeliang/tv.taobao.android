@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffe48b05" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp_40" android:textColor="@color/text_color_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" android:text="@string/ytsdk_address_edit_title" android:shadowColor="#ffde7c04" android:shadowRadius="4"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ytsdk_ui2_edit_address_left" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ytsdk_ui2_edit_address_right" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_25" android:textColor="@color/text_color_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ytsdk_address_edit_text_edit" android:shadowColor="#ffde7c04" android:shadowRadius="4" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_25" android:textColor="@color/text_color_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ytsdk_address_edit_text_saomiao" android:shadowColor="#ffde7c04" android:shadowRadius="4" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

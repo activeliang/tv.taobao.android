@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/my_collect_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:background="#b4000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.biz.widget.FocusNoDeepRelativeLayout android:orientation="vertical" android:id="@+id/my_collect_focus_layout" android:background="@drawable/ytshop_my_collect_whitepanel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_480" android:layout_height="@dimen/dp_362" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/sp_36" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/my_collect_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_centerHorizontal="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/my_collect_layout" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_89" android:layout_marginTop="@dimen/dp_20" android:layout_below="@+id/my_collect_title" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/ytshop_my_collect_button" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:text="@string/ytshop_open_my_collect" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </com.yunos.tvtaobao.biz.widget.FocusNoDeepRelativeLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager>

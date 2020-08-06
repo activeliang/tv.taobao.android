@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bottom_gradian_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_364" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/notify" android:background="@drawable/back_notify" android:layout_width="@dimen/dp_208" android:layout_height="@dimen/dp_60" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:id="@+id/progressbar_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_122" android:layout_below="@+id/notify">
+            <RelativeLayout android:id="@+id/dddd" android:layout_width="match_parent" android:layout_height="@dimen/dp_38" android:layout_centerInParent="true">
+                <ProgressBar android:id="@+id/progressbar" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_6" android:layout_marginLeft="@dimen/dp_160" android:layout_marginRight="@dimen/dp_160" android:progress="0" android:progressDrawable="@drawable/progressbar_bg" android:layout_centerInParent="true" style="?android:attr/progressBarStyleHorizontal"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/control_relative" android:background="@drawable/control_bg" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_80" android:layout_above="@+id/dddd" android:layout_centerVertical="true">
+                <ImageButton android:id="@+id/ib_left" android:background="@drawable/kuaitui_selector" android:layout_width="@dimen/dp_48" android:layout_height="match_parent"/>
+                <ImageButton android:id="@+id/ib_center" android:background="@drawable/stop_play_selector" android:focusable="true" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:layout_toRightOf="@+id/ib_left"/>
+                <ImageButton android:id="@+id/ib_right" android:background="@drawable/kuaijin_selector" android:layout_width="@dimen/dp_48" android:layout_height="match_parent" android:layout_toRightOf="@+id/ib_center"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/reached_time" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_38" android:text="00:00" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/total_time" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_38" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <RelativeLayout android:gravity="center" android:id="@+id/rl_contain_iv_on_progress" android:layout_width="@dimen/dp_85" android:layout_height="@dimen/dp_96" android:layout_marginLeft="@dimen/dp_110" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_on_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progress_iv_onfocus"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/ll_next_last_btn_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_128" android:layout_marginTop="@dimen/dp_24" android:layout_below="@+id/progressbar_layout">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_lastVideo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_21" android:textColor="#ffffff" android:gravity="right" android:id="@+id/tv_good_name_last" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_64"/>
+                    <ImageView android:id="@+id/iv_good_last" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_128" android:layout_marginLeft="@dimen/dp_16" android:scaleType="fitXY"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_128" android:layout_marginLeft="@dimen/dp_16">
+                    <ImageView android:id="@+id/last_video_iv" android:background="@drawable/last_video_focus" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ImageView android:id="@+id/ib_last" android:focusable="true" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_30" android:src="@drawable/last_play" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_48">
+                <RelativeLayout android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_128">
+                    <ImageView android:id="@+id/next_video_iv" android:background="@drawable/next_video_focus" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ImageView android:id="@+id/ib_next" android:focusable="true" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_30" android:src="@drawable/next_play" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_nextVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+                    <ImageView android:id="@+id/iv_good_next" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_128" android:scaleType="fitXY"/>
+                    <TextView android:textSize="@dimen/sp_21" android:textColor="#ffffff" android:gravity="left" android:id="@+id/tv_good_name_next" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_64" android:layout_marginLeft="@dimen/dp_16"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

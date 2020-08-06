@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_tvtaobao_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_37" android:layout_marginLeft="@dimen/dp_64" android:layout_marginTop="@dimen/dp_60_7" android:layout_marginRight="@dimen/dp_64" android:src="@drawable/icon_taobao_login_top"/>
+    <ImageView android:id="@+id/iv_taobao_title" android:layout_width="@dimen/dp_648" android:layout_height="@dimen/dp_78" android:layout_marginTop="@dimen/dp_114" android:src="@drawable/icon_taobao_login_title" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_qr" android:background="@drawable/shape_qr" android:padding="@dimen/dp_16" android:layout_width="@dimen/dp_385" android:layout_height="@dimen/dp_385" android:layout_marginLeft="@dimen/dp_320" android:layout_marginTop="@dimen/dp_209"/>
+    <ImageView android:id="@+id/iv_qr_scan_success" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="@dimen/dp_384" android:layout_height="@dimen/dp_384" android:layout_marginLeft="@dimen/dp_320" android:layout_marginTop="@dimen/dp_209" android:src="@drawable/icon_taobao_scan_code_success"/>
+    <ImageView android:id="@+id/iv_phone" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_285" android:layout_height="@dimen/dp_430" android:layout_marginLeft="@dimen/dp_f12" android:layout_marginTop="@dimen/dp_172" android:src="@drawable/icon_taobao_login_phone" android:layout_toRightOf="@+id/iv_qr"/>
+    <ImageView android:id="@+id/iv_next" android:layout_width="@dimen/dp_156" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_360" android:src="@drawable/icon_next_alipay" android:layout_alignParentRight="true"/>
+</RelativeLayout>

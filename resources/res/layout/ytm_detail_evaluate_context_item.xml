@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.detailbundle.view.DetailEvaluatecItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/dp_15" android:paddingTop="@dimen/dp_27" android:paddingRight="@dimen/dp_15" android:paddingBottom="@dimen/dp_27" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/ytsdk_detail_evaluate_context_font_color" android:id="@+id/evaluate_context_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/evaluate_context_user_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/evaluate_context_user" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/ytsdk_detail_evaluate_context_font_color" android:id="@+id/evaluate_context_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_black" android:id="@+id/evaluate_context_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:includeFontPadding="false"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/ytsdk_detail_evaluate_context_font_color" android:id="@+id/evaluate_context_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:maxLines="3" android:includeFontPadding="false"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/evaluate_context_pic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18"/>
+</com.yunos.tvtaobao.detailbundle.view.DetailEvaluatecItemView>

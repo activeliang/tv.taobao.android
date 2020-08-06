@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/qrcode_layout" android:background="#e60e1215" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/payment_background_qr_dialog" android:layout_width="@dimen/dp_480" android:layout_height="@dimen/dp_620" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@color/payment_color_black" android:gravity="center" android:id="@+id/qrcode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:text="该商品仅支持手机扫码购买" android:lines="1" android:textAlignment="center"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/qrcode_active_image" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_98" android:layout_marginTop="@dimen/dp_12" android:src="@drawable/ytbv_qr_support_apps_no_11"/>
+        <ImageView android:id="@+id/qrcode_image" android:background="@android:color/white" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400"/>
+    </LinearLayout>
+</RelativeLayout>

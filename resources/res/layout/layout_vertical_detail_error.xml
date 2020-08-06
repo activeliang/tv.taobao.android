@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tv_taobao_error_layout" android:background="#99001122" android:layout_width="@dimen/dp_520" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_214" android:layout_marginTop="@dimen/dp_75" android:src="@drawable/tvtao_detail_error_icon"/>
+            <TextView android:textSize="@dimen/sp_34" android:textColor="#fffab7" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:text="这件商品不见啦"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="可能是因为网络不通畅\10 也可能是商品被下架了"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_26" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_taobao_good_error_back" android:background="@drawable/tvtao_detail_error_back" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_260" android:layout_height="@dimen/dp_52" android:layout_marginBottom="@dimen/dp_75" android:text="返回到上一页" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

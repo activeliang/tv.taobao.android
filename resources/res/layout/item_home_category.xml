@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.elem.activity.home.views.CategoryItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:clipChildren="false" android:layout_width="@dimen/dp_272" android:layout_height="@dimen/dp_104">
+    <FrameLayout android:id="@+id/titleContainer" android:background="@drawable/eleme_category_bg_f" android:layout_width="@dimen/dp_260" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_12" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="@dimen/dp_28" android:textColor="#f9e1d6" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_122" android:layout_marginRight="@dimen/dp_24" android:text="测试文字" android:lines="1"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_104" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</com.yunos.tvtaobao.elem.activity.home.views.CategoryItemView>

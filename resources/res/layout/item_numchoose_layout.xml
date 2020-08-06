@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.biz.widget.newsku.widget.NumChooseItem android:id="@+id/item_layout_numchooseitem" android:layout_width="@dimen/dp_236" android:layout_height="@dimen/dp_60"/>
+    <TextView android:textSize="@dimen/dp_24" android:textColor="#202020" android:layout_gravity="center_vertical" android:id="@+id/item_layout_manytimes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12"/>
+    <TextView android:textSize="@dimen/dp_24" android:textColor="#202020" android:layout_gravity="center_vertical" android:id="@+id/item_layout_canbuyquantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12"/>
+</LinearLayout>

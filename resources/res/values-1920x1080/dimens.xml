@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ytbv_pierce_background_image_width">66px</dimen>
+    <dimen name="ytbv_pierce_block_margin_top">735px</dimen>
+    <dimen name="ytbv_pierce_cart_active_image_height">212px</dimen>
+    <dimen name="ytbv_pierce_cart_active_image_width">210px</dimen>
+    <dimen name="ytbv_pierce_cart_margin_top">435px</dimen>
+    <dimen name="ytbv_pierce_cart_text_width">264px</dimen>
+    <dimen name="ytbv_pierce_come_back_margin_top">887px</dimen>
+    <dimen name="ytbv_pierce_contact_margin_top">979px</dimen>
+    <dimen name="ytbv_pierce_contact_text_width">336px</dimen>
+    <dimen name="ytbv_pierce_home_margin_top">251px</dimen>
+    <dimen name="ytbv_pierce_layout_width">426px</dimen>
+    <dimen name="ytbv_pierce_layout_width_margin_left">1494px</dimen>
+    <dimen name="ytbv_pierce_my_margin_top">343px</dimen>
+    <dimen name="ytbv_pierce_ordinary_image_height">92px</dimen>
+    <dimen name="ytbv_pierce_ordinary_image_width">82px</dimen>
+    <dimen name="ytbv_pierce_red_packet_margin_top">645px</dimen>
+    <dimen name="ytbv_pierce_text_height">66px</dimen>
+    <dimen name="ytbv_pierce_text_margin_right">90px</dimen>
+    <dimen name="ytbv_pierce_text_padding_left">20px</dimen>
+    <dimen name="ytbv_pierce_text_size">26px</dimen>
+    <dimen name="ytbv_pierce_text_width">174px</dimen>
+</resources>

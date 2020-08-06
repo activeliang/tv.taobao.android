@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_associate_word" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+    <TextView android:textSize="@dimen/sp_28" android:textColor="@color/ytbv_white" android:id="@+id/associate_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="是规范化" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/cutting_line" android:background="#6d7482" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+</android.support.constraint.ConstraintLayout>

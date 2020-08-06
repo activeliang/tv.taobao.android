@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tradelink.view.AddressEditRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:focusable="false" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_60" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/ytm_buildorder_address_ok" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ytm_buildorder_address_edit_ok" android:singleLine="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/buildorder_edit_icon" android:background="@drawable/ytm_buildorder_address_edit_icon" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_0" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/ytm_buildorder_address_addr" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ytm_buildorder_address_edit_addr" android:singleLine="true" android:layout_toRightOf="@+id/buildorder_edit_icon" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</com.yunos.tvtaobao.tradelink.view.AddressEditRelativeLayout>

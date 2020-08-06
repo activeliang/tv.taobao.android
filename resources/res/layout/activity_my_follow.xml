@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_my_follow" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/ll_header" android:layout_width="match_parent" android:layout_height="@dimen/values_dp_94" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/img_icon" android:background="@drawable/icon_my_follow" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_72" android:layout_marginTop="@dimen/dp_48"/>
+        <TextView android:textSize="@dimen/sp_40" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_my_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_40" android:text="@string/my_follow_str"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_my_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_72" android:layout_marginTop="@dimen/dp_44" app:layout_constraintTop_toTopOf="0">
+            <RadioButton android:textSize="@dimen/sp_28" android:textColor="@drawable/my_follow_radio_btn_textcolor_select" android:gravity="center" android:id="@+id/rb_daren" android:background="@drawable/my_follow_radio_btn_select" android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_48" android:checked="true" android:button="@null" android:text="@string/daren"/>
+            <RadioButton android:textSize="@dimen/sp_28" android:textColor="@drawable/my_follow_radio_btn_textcolor_select" android:gravity="center" android:id="@+id/rb_shop" android:background="@drawable/my_follow_radio_btn_select" android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_16" android:button="@null" android:text="@string/shop"/>
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>

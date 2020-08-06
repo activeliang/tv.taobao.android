@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_169_3">
+    <ImageView android:id="@+id/rl_bg_item" android:focusable="false" android:layout_width="@dimen/dp_489_3" android:layout_height="@dimen/dp_169_3" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/rl_bg" android:focusable="false" android:layout_width="@dimen/dp_468" android:layout_height="@dimen/dp_148" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@+id/rl_info" android:paddingLeft="@dimen/dp_18" android:focusable="false" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_140">
+            <TextView android:textSize="@dimen/sp_70" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tv_money" android:focusable="false" android:layout_width="@dimen/dp_320" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp_18" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tv_require_money_use" android:paddingRight="@dimen/dp_7" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_25_3" android:layout_below="@+id/tv_money"/>
+            <RelativeLayout android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_25_3" android:layout_toRightOf="@+id/tv_require_money_use" android:layout_below="@+id/tv_money">
+                <ImageView android:textSize="@dimen/sp_14" android:textColor="#4474c4" android:id="@+id/tv_require_goods_use_all" android:focusable="false" android:layout_width="@dimen/dp_63" android:layout_height="@dimen/dp_18" android:layout_centerVertical="true"/>
+                <ImageView android:textSize="@dimen/sp_14" android:textColor="#4474c4" android:id="@+id/tv_require_goods_use_part" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_18" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_18" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tv_require_time_use" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_25_3" android:layout_below="@+id/tv_require_money_use"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_32" android:textColor="#4474c4" android:gravity="center" android:id="@+id/tv_apply" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_5" android:focusable="false" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_140" android:text="@string/ytsdk_detail_mmediately_receive" android:layout_toRightOf="@+id/rl_info" android:lineSpacingExtra="8sp"/>
+    </RelativeLayout>
+</RelativeLayout>

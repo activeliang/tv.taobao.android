@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/icon_speek_back" android:layout_width="match_parent" android:layout_height="@dimen/dp_156" android:layout_alignParentBottom="true">
+        <TextView android:textSize="32sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/voice_card_search_tts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_200" android:layout_centerVertical="true" android:lineSpacingExtra="8sp"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/voice_layout_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_46" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_tips" android:layout_toLeftOf="@+id/voice_card_search_tips" android:layout_centerVertical="true"/>
+            <com.tvtaobao.voicesdk.view.AutoTextView android:id="@+id/voice_card_search_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:textSize="@dimen/sp_20" app:textcolor="#b2ffffff" app:lines="1" app:gravity="end"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

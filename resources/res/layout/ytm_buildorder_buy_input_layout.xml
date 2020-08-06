@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tradelink.view.BuildOrderItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/ytm_buildorder_inputbox" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_100">
+        <com.yunos.tvtaobao.tvsdk.widget.focus.FocusEditText android:textSize="@dimen/sp_22" android:textColor="@color/ytm_white" android:id="@+id/goods_buy_edit_input" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textNoSuggestions"/>
+    </RelativeLayout>
+</com.yunos.tvtaobao.tradelink.view.BuildOrderItemView>

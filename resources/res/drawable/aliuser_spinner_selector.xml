@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:drawable="@drawable/aliuser_ic_arrow_drop_down_black_edit"/>
+    <item android:state_pressed="false" android:drawable="@drawable/aliuser_ic_arrow_drop_down_black_edit"/>
+</selector>

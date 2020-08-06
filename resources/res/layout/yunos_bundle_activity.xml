@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/ytm_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/back_desk" android:background="@drawable/yunos_or_dmode" android:focusable="true" android:layout_width="@dimen/dp_428" android:layout_height="@dimen/dp_532" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/ytm_black" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yunos_dmode_tips1" android:layout_above="@+id/tips_text" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/ytm_black" android:id="@+id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yunos_dmode_tips2" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/ytm_black" android:paddingTop="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yunos_dmode_tips3" android:layout_below="@+id/tips_text" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

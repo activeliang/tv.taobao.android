@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_point_get" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/cytz_point_get" android:layout_width="@dimen/dp_208" android:layout_height="@dimen/dp_270" android:layout_marginBottom="@dimen/dp_80" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.yunos.tvtaobao.zhuanti.view.ArcProgress android:id="@+id/arcProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_47" android:layout_marginTop="@dimen/dp_86" android:max="103" app:progressColor="@color/cytz_arcProgress" app:tickDensity="3" app:radius="@dimen/dp_58" app:degree="99" app:arcCapRound="true" app:progressStyle="0"/>
+        <ImageView android:background="@drawable/cytz_point_get_botton" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

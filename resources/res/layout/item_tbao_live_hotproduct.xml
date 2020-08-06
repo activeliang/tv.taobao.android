@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tbao_live_hot_product_text" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_24" android:layout_marginTop="@dimen/dp_32" android:text="最热推荐"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tbao_live_hot_product_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_208" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_f10">
+        <com.yunos.tvtaobao.live.view.FocusRelativeLayout android:id="@+id/tbao_live_hot_product_layout_1" android:focusable="true" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_208" android:layout_marginLeft="@dimen/dp_10">
+            <RelativeLayout android:nextFocusRight="@+id/tbao_live_hot_product_layout_2" android:layout_width="@dimen/dp_132" android:layout_height="@dimen/dp_180" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/tbao_live_hot_product_1" android:layout_width="@dimen/dp_132" android:layout_height="@dimen/dp_132" android:scaleType="fitXY"/>
+                <ImageView android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_16" android:src="@drawable/tbao_live_hot_product_lable" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_below="@+id/tbao_live_hot_product_1">
+                    <TextView android:textSize="@dimen/sp_20" android:textColor="#15202b" android:id="@+id/tbao_live_hot_product_price_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/tbao_live_hot_product_fav_1" android:visibility="gone" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/tbao_live_hot_shop_fav_unfocus" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/focusbox_product1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/focusbox_hot_product" android:scaleType="fitXY"/>
+        </com.yunos.tvtaobao.live.view.FocusRelativeLayout>
+        <com.yunos.tvtaobao.live.view.FocusRelativeLayout android:id="@+id/tbao_live_hot_product_layout_2" android:focusable="true" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_208" android:layout_marginLeft="@dimen/dp_f14">
+            <RelativeLayout android:background="#ffffff" android:nextFocusLeft="@+id/tbao_live_hot_product_layout_1" android:layout_width="@dimen/dp_132" android:layout_height="@dimen/dp_180" android:layout_marginLeft="@dimen/dp_4" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/tbao_live_hot_product_2" android:layout_width="@dimen/dp_132" android:layout_height="@dimen/dp_132" android:scaleType="fitXY"/>
+                <ImageView android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_16" android:src="@drawable/tbao_live_hot_product_lable" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_below="@+id/tbao_live_hot_product_2">
+                    <TextView android:textSize="@dimen/sp_20" android:textColor="#15202b" android:id="@+id/tbao_live_hot_product_price_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/tbao_live_hot_product_fav_2" android:visibility="gone" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/tbao_live_hot_shop_fav_unfocus" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/focusbox_product2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/focusbox_hot_product" android:scaleType="fitXY"/>
+        </com.yunos.tvtaobao.live.view.FocusRelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tbao_live_hot_all_product" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_24" android:layout_marginTop="@dimen/dp_32" android:text="全部宝贝"/>
+</LinearLayout>

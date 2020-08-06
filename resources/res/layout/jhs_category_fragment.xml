@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryFragmentLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/category_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryViewPager android:layout_gravity="center_horizontal" android:id="@+id/goods_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:soundEffectsEnabled="false"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/load_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_goods" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jhs_no_goods"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/no_goods_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:text="@string/jhs_brand_list_null"/>
+    </LinearLayout>
+</com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryFragmentLayout>

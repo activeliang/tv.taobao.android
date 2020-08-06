@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_my_coupon" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_33" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <RadioButton android:textSize="@dimen/sp_32" android:textColor="@color/white" android:gravity="center" android:id="@+id/rb_coupon_eleme" android:background="@drawable/bg_tab_coupon_btn_select" android:layout_width="@dimen/dp_116" android:layout_height="@dimen/dp_60" android:checked="true" android:button="@null" android:text="@string/coupon_red_packet"/>
+        <View android:layout_gravity="center" android:background="@drawable/bg_tab_my_coupon_point" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginLeft="@dimen/dp_18" android:layout_marginRight="@dimen/dp_18"/>
+        <RadioButton android:textSize="@dimen/sp_32" android:textColor="@color/white" android:gravity="center" android:id="@+id/rb_coupon_shop" android:background="@drawable/bg_tab_coupon_btn_select" android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_60" android:button="@null" android:text="@string/coupon_shop_red_packet"/>
+        <View android:layout_gravity="center" android:background="@drawable/bg_tab_my_coupon_point" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginLeft="@dimen/dp_18" android:layout_marginRight="@dimen/dp_18"/>
+        <RadioButton android:textSize="@dimen/sp_32" android:textColor="@color/white" android:gravity="center" android:id="@+id/rb_coupon_diyongquan" android:background="@drawable/bg_tab_coupon_btn_select" android:layout_width="@dimen/dp_148" android:layout_height="@dimen/dp_60" android:button="@null" android:text="@string/coupon_diyongquan"/>
+    </RadioGroup>
+    <FrameLayout android:id="@+id/fl_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>

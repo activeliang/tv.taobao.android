@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_eleme_create_order_btn_select" android:padding="@dimen/dp_4" android:focusable="true" android:layout_width="@dimen/dp_164" android:layout_height="@dimen/dp_80" android:layout_marginRight="@dimen/dp_12">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:gravity="center" android:id="@+id/title" android:background="@drawable/bg_eleme_create_order_item_deliver_tiem_select" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/icon" android:background="@drawable/icon_deliver_time_chose" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36"/>
+</FrameLayout>

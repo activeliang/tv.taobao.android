@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/super_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dialog_layout" android:background="@color/ytbv_white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_437" android:layout_height="@dimen/dp_171" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/lvgouicon"/>
+                <TextView android:textSize="@dimen/sp_28" android:textColor="#272727" android:gravity="center_horizontal" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/foot" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_32">
+                <Button android:textSize="@dimen/sp_20" android:textColor="#848485" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/positiveButton" android:background="#f5f4f2" android:layout_width="match_parent" android:layout_height="@dimen/dp_48"/>
+            </LinearLayout>
+        </com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager>

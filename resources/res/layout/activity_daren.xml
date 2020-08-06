@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_daren_home" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.biz.widget.CenterRecyclerView android:id="@+id/rv_daren" android:paddingLeft="@dimen/dp_60" android:paddingRight="@dimen/dp_60" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_empty_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/values_dp_262" app:layout_constraintBottom_toBottomOf="0">
+        <ImageView android:background="@drawable/icon_daren_videos_empty" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_160"/>
+        <TextView android:textSize="@dimen/sp_28" android:textColor="#4dffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="该达人没有视频哦"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

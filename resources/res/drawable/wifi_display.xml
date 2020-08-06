@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/tui_sys_wifi_signal_4" android:maxLevel="4"/>
+    <item android:drawable="@drawable/tui_sys_wifi_signal_3" android:maxLevel="3"/>
+    <item android:drawable="@drawable/tui_sys_wifi_signal_2" android:maxLevel="2"/>
+    <item android:drawable="@drawable/tui_sys_wifi_signal_1" android:maxLevel="1"/>
+</level-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:top="@dimen/dp_60">
+        <shape>
+            <gradient android:startColor="#05111d" android:endColor="#0005111d" android:angle="90"/>
+        </shape>
+    </item>
+</layer-list>

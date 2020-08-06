@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.newcart.view.ShopCartItemFocusLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingBottom="@dimen/dp_16" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50dp">
+    <include android:id="@+id/shopcart_item_infoview" android:background="@drawable/new_shop_cart_item_info_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_60" layout="@layout/layout_new_shop_cart_item_view"/>
+</com.yunos.tvtaobao.newcart.view.ShopCartItemFocusLayout>

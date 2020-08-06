@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:gravity="center" android:height="@dimen/dp_51">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_25"/>
+                    <stroke android:width="@dimen/dp_2" android:color="#ffffff"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:height="@dimen/dp_45" android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+                <shape android:shape="rectangle">
+                    <solid android:color="#ff6000"/>
+                    <corners android:radius="@dimen/dp_23"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="false">
+        <layer-list>
+            <item android:gravity="center" android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+                <shape android:shape="rectangle">
+                    <size android:height="@dimen/dp_44"/>
+                    <corners android:radius="@dimen/dp_21"/>
+                    <stroke android:width="@dimen/dp_1" android:color="#99a2aaba"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

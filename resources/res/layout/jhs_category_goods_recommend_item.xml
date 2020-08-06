@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/discount_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginBottom="6dp">
+            <TextView android:textSize="40sp" android:textStyle="normal|bold|italic" android:textColor="@color/jhs_white" android:id="@+id/discount_tv1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+            <TextView android:textSize="26sp" android:textStyle="normal|bold|italic" android:textColor="@color/jhs_white" android:id="@+id/discount_tv2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="36sp" android:textColor="@color/jhs_white" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jhs_dollar_sign" android:singleLine="true"/>
+                <TextView android:textSize="56sp" android:textStyle="bold" android:textColor="@color/jhs_white" android:id="@+id/activityPrice_tv" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="24sp" android:textColor="@color/jhs_white" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="@string/jhs_original_price" android:singleLine="true"/>
+                <TextView android:textSize="24sp" android:textColor="@color/jhs_white" android:id="@+id/originalPrice_tv" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/jhs_page_goods_text_big_size" android:textColor="@color/jhs_white" android:id="@+id/itemCount_tv" android:paddingLeft="@dimen/dp_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

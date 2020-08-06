@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_dstb_rebate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_7">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:background="@drawable/tvtao_shape_detail_dstb_rebate" android:paddingLeft="@dimen/dp_3" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_3" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电视下单再返" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="@color/colorWhite" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_dstb_rebate_value" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_1" android:maxLines="2" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_hdetail_only_one" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.yunos.tvtaobao.zhuanti.widget.HDetailExtendsSurfaceView android:id="@+id/sf_hdetail_extends" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

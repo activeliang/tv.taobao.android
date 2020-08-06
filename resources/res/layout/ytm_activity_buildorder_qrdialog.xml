@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/qrcode_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ytm_taobao_qrdialog_background" android:layout_width="@dimen/dp_480" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_60" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/sp_26" android:textColor="@color/ytbv_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:text="亲，已为您下订单啦" android:textAlignment="center"/>
+        <TextView android:textSize="@dimen/sp_36" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/qrcode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="订单总计xxxx元" android:singleLine="true" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/sp_26" android:textColor="#000000" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:text="打开【手机淘宝】扫码付款"/>
+        <RelativeLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_9" android:layout_marginTop="@dimen/dp_9" android:layout_marginRight="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_9" android:layout_weight="1">
+            <ImageView android:id="@+id/qrcode_image" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400"/>
+            <ImageView android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_66" android:src="@drawable/ytbv_icon_qr_tao" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytm_buildorder_sku" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:text="活动期间返现红包可能会略有延时哦~"/>
+    </LinearLayout>
+</RelativeLayout>

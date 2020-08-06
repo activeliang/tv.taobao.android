@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tvshoppingbundle.view.TvShopCollectItemLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="@dimen/dp_6" android:paddingBottom="@dimen/dp_1_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="bottom" android:layout_width="@dimen/dp_300" android:layout_height="@dimen/dp_194">
+        <ImageView android:id="@+id/collect_goods_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ytshop_goods_image_default" android:scaleType="centerInside" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/collected_biaozhu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_203" android:layout_marginBottom="@dimen/dp_92" android:src="@drawable/ytshop_collect_biaozhu" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.yunos.tvtaobao.tvshoppingbundle.view.TvShopCollectItemLayout>

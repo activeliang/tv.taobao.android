@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_loginauth" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/voice_login_head" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:layout_marginLeft="@dimen/dp_52" android:layout_marginTop="@dimen/dp_42" android:src="@drawable/head_tao"/>
+    <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/voice_login_reply" android:layout_width="@dimen/dp_672" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_56" android:text="亲，欢迎使用电视淘宝。" android:lines="2" android:layout_toRightOf="@+id/voice_login_head"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/order_info_tip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_56" android:layout_marginRight="@dimen/dp_42" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/icon_chat_prompt"/>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:id="@+id/order_info_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/voice_login_qrcode_layout" android:background="@drawable/bg_qrcode_status" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400" android:layout_marginLeft="@dimen/dp_440" android:layout_marginTop="@dimen/dp_176">
+        <ImageView android:id="@+id/voice_login_qrcode" android:padding="@dimen/dp_15" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400"/>
+        <FrameLayout android:id="@+id/voice_login_status" android:background="@drawable/bg_qrcode_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_140" android:src="@drawable/tag_pay_qrcode_success"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="false" android:drawable="@android:color/transparent"/>
+    <item android:state_enabled="true" android:drawable="@drawable/aliuser_send_sms_bg_btn_round"/>
+    <item android:drawable="@drawable/aliuser_send_sms_bg_btn_round"/>
+</selector>

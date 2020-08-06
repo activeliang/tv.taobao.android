@@ -1,0 +1,43 @@
+package org.osgi.framework;
+
+public interface Constants {
+    public static final String BUNDLE_ACTIVATOR = "Bundle-Activator";
+    public static final String BUNDLE_CATEGORY = "Bundle-Category";
+    public static final String BUNDLE_CLASSPATH = "Bundle-ClassPath";
+    public static final String BUNDLE_CONTACTADDRESS = "Bundle-ContactAddress";
+    public static final String BUNDLE_COPYRIGHT = "Bundle-Copyright";
+    public static final String BUNDLE_DESCRIPTION = "Bundle-Description";
+    public static final String BUNDLE_DOCURL = "Bundle-DocURL";
+    public static final String BUNDLE_NAME = "Bundle-Name";
+    public static final String BUNDLE_NATIVECODE = "Bundle-NativeCode";
+    public static final String BUNDLE_NATIVECODE_LANGUAGE = "language";
+    public static final String BUNDLE_NATIVECODE_OSNAME = "osname";
+    public static final String BUNDLE_NATIVECODE_OSVERSION = "osversion";
+    public static final String BUNDLE_NATIVECODE_PROCESSOR = "processor";
+    public static final String BUNDLE_REQUIREDEXECUTIONENVIRONMENT = "Bundle-RequiredExecutionEnvironment";
+    public static final String BUNDLE_UPDATELOCATION = "Bundle-UpdateLocation";
+    public static final String BUNDLE_VENDOR = "Bundle-Vendor";
+    public static final String BUNDLE_VERSION = "Bundle-Version";
+    public static final String BUNDLE_VERSION_ATTRIBUTE = "bundle-version";
+    public static final String DYNAMICIMPORT_PACKAGE = "DynamicImport-Package";
+    public static final String EXPORT_PACKAGE = "Export-Package";
+    public static final String EXPORT_SERVICE = "Export-Service";
+    public static final String FRAMEWORK_EXECUTIONENVIRONMENT = "org.osgi.framework.executionenvironment";
+    public static final String FRAMEWORK_LANGUAGE = "org.osgi.framework.language";
+    public static final String FRAMEWORK_OS_NAME = "org.osgi.framework.os.name";
+    public static final String FRAMEWORK_OS_VERSION = "org.osgi.framework.os.version";
+    public static final String FRAMEWORK_PROCESSOR = "org.osgi.framework.processor";
+    public static final String FRAMEWORK_VENDOR = "org.osgi.framework.vendor";
+    public static final String FRAMEWORK_VERSION = "org.osgi.framework.version";
+    public static final String IMPORT_PACKAGE = "Import-Package";
+    public static final String IMPORT_SERVICE = "Import-Service";
+    public static final String OBJECTCLASS = "objectClass";
+    public static final String PACKAGE_SPECIFICATION_VERSION = "specification-version";
+    public static final String REQUIRE_BUNDLE = "Require-Bundle";
+    public static final String SERVICE_DESCRIPTION = "service.description";
+    public static final String SERVICE_ID = "service.id";
+    public static final String SERVICE_PID = "service.pid";
+    public static final String SERVICE_RANKING = "service.ranking";
+    public static final String SERVICE_VENDOR = "service.vendor";
+    public static final String SYSTEM_BUNDLE_LOCATION = "System Bundle";
+}

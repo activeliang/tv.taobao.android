@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/sku_prop_item_name" android:focusable="false" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_67" android:lines="1"/>
+    <RelativeLayout android:id="@+id/sku_prop_item_layout" android:background="@drawable/ytm_sku_select_bar" android:layout_width="@dimen/dp_450" android:layout_height="@dimen/dp_67" android:layout_marginLeft="@dimen/dp_120">
+        <com.yunos.tvtaobao.biz.widget.SkuView android:id="@+id/sku_prop_item_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:background="@drawable/ytm_sku_prop_mask_left" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        <ImageView android:background="@drawable/ytm_sku_prop_mask_right" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sku_buy_num_layout" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_70">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/ytm_sku_buy_num_bg" android:layout_width="@dimen/dp_194" android:layout_height="@dimen/dp_67">
+                <ImageView android:id="@+id/sku_buy_num_left_array" android:layout_width="@dimen/dp_61" android:layout_height="match_parent" android:src="@drawable/ytm_sku_buy_num_left_normal" android:scaleType="center"/>
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/sku_buy_num" android:focusable="false" android:layout_width="@dimen/dp_69" android:layout_height="match_parent" android:includeFontPadding="false"/>
+                <ImageView android:id="@+id/sku_buy_num_right_array" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:src="@drawable/ytm_sku_buy_num_right_normal" android:scaleType="center"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#b0afaf" android:layout_gravity="center_vertical" android:id="@+id/sku_unit_buy_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/ytm_sku_unit_buy_text"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#b0afaf" android:id="@+id/sku_kucun_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ytm_sku_kucun_text"/>
+    </LinearLayout>
+</RelativeLayout>

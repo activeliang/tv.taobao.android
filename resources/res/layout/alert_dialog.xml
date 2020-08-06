@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/alert_dialog_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/parentPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/alert_dialog_parent_panel_minWidth">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/topPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/alert_dialog_top_panel_minWidth">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_template" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_dialog_padding_10" android:layout_marginRight="@dimen/alert_dialog_padding_10">
+                <ImageView android:layout_gravity="top" android:id="@+id/icon" android:paddingTop="@dimen/alert_dialog_padding_6" android:paddingRight="@dimen/alert_dialog_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_dialog_info"/>
+                <TextView android:textSize="@dimen/alert_dialog_title_text_size" android:textColor="@color/tui_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@+id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ScrollView android:id="@+id/scrollView" android:paddingLeft="@dimen/alert_dialog_padding_14" android:paddingRight="@dimen/alert_dialog_padding_10" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/alert_dialog_top_margin_bottom" android:overScrollMode="ifContentScrolls">
+                <TextView android:textSize="@dimen/alert_dialog_msg_text_size" android:textColor="@color/tui_text_color_white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.5"/>
+            </ScrollView>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <FrameLayout android:id="@+id/custom" android:paddingTop="@dimen/alert_dialog_padding_5" android:paddingBottom="@dimen/alert_dialog_padding_5" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/buttonPanel" android:background="@drawable/alert_dialog_btn_bg" android:paddingBottom="@dimen/alert_dialog_btn_container_padding_b" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alert_dialog_btn_margin_top_1">
+            <ScrollView android:id="@+id/buttonContainerScroller" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/buttonContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/leftSpacer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/alert_dialog_padding_10"/>
+                    <com.yunos.tvtaobao.tvsdk.widget.dialog.AlertDialogFocusButton android:id="@+id/button1" style="@style/AlertDialogButton"/>
+                    <com.yunos.tvtaobao.tvsdk.widget.dialog.AlertDialogFocusButton android:id="@+id/button3" style="@style/AlertDialogButton"/>
+                    <com.yunos.tvtaobao.tvsdk.widget.dialog.AlertDialogFocusButton android:id="@+id/button2" style="@style/AlertDialogButton"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/rightSpacer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/alert_dialog_padding_10"/>
+                </LinearLayout>
+            </ScrollView>
+        </com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager>
+    </LinearLayout>
+</FrameLayout>

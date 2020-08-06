@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_62">
+        <View android:background="#4cffffff" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_1"/>
+        <ImageView android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/tvtao_icon_login_mine"/>
+        <TextView android:textSize="@dimen/sp_28" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_11" android:layout_marginRight="@dimen/dp_20" android:text="账号登录"/>
+        <View android:background="#4cffffff" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_140">
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ff3100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【手机淘宝】"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫码"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_174" android:text="在设备上登录电视淘宝"/>
+    <FrameLayout android:id="@+id/layout_qrcode_view" android:background="@drawable/tvtao_qrcode_background" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_320" android:layout_marginTop="@dimen/dp_220" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/img_qrCode_image" android:padding="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tvtao_qr_small"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_qr_scan_success" android:background="@drawable/tvtao_scan_code_success" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_quick_login" android:background="@drawable/tvtao_bg_login_button_focus" android:layout_width="@dimen/dp_324" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_34" android:layout_below="@+id/layout_qrcode_view" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:id="@+id/txt_quick_login" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_80" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_18" android:textColor="#aabbcc" android:gravity="center" android:id="@+id/txt_kefu_phone" android:background="@drawable/tvtao_v_login_service_phone_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="@string/tvtao_customer_service_telephone" android:layout_alignParentBottom="true"/>
+    <com.yunos.tvtaobao.zhuanti.tvbuy.widget.CustomNQRView android:id="@+id/nqrview" android:visibility="invisible" android:layout_width="200dp" android:layout_height="200dp"/>
+</RelativeLayout>

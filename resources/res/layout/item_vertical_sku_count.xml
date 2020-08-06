@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="1dp" android:layout_height="@dimen/dp_10"/>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@+id/sku_prop_item_name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/sku_buy_num_layout" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@+id/sku_buy_num_layout" android:nextFocusRight="@+id/sku_buy_num_layout" android:layout_width="@dimen/dp_148" android:layout_height="@dimen/dp_56">
+            <View android:id="@+id/view_sku_num_bg" android:background="@drawable/tvtao_bg_sku_pro_focus" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_56"/>
+            <TextView android:textSize="@dimen/sp_24" android:gravity="center" android:id="@+id/sku_buy_num" android:background="#7f4b5b6a" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/sku_buy_num_left_array" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_17" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/sku_buy_num_right_array" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_17" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/colorWhite" android:gravity="center_horizontal" android:id="@+id/tv_sku_prop_pop_tip" android:background="@drawable/tvtao_icon_sku_pop_tip" android:paddingTop="@dimen/dp_8" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/dp_148" android:layout_height="@dimen/dp_48" android:text="超出限购数量"/>
+</FrameLayout>

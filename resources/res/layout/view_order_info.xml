@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/order_info_layout" android:paddingLeft="@dimen/dp_128" android:paddingTop="@dimen/dp_46" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_632" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_info_address_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/icon_address"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="默认收货信息"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:id="@+id/order_info_userinfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/order_info_areainfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12" android:maxLines="2" android:lineSpacingExtra="@dimen/sp_12"/>
+        <View android:background="@drawable/icon_splitter_bar" android:layout_width="match_parent" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_32"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/icon_product_name"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="商品名称"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/order_info_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/order_info_skuinfo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:id="@+id/order_info_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:id="@+id/order_info_postage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_12">
+            <TextView android:textSize="@dimen/sp_34" android:textColor="#ff4b00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实付："/>
+            <TextView android:textSize="@dimen/sp_48" android:textColor="#ff4b00" android:id="@+id/order_info_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0元"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_rebate_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_2">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_rebate_icon" android:layout_width="wrap_content" android:layout_height="@dimen/dp_26" android:layout_marginTop="@dimen/dp_2" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ff4a00" android:id="@+id/txt_rebate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tvtaobao.android.ui3.widget.RoundImageView android:id="@+id/order_info_total_image" android:visibility="gone" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_400" android:layout_marginLeft="@dimen/dp_74" app:ui3wares_radius="@dimen/dp_16"/>
+</LinearLayout>

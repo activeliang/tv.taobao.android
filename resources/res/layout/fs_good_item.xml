@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.flashsale.view.GoodsItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="@dimen/dp_414" android:layout_height="@dimen/dp_228">
+    <FrameLayout android:id="@+id/fs_fl_stock_image" android:layout_width="@dimen/dp_228" android:layout_height="@dimen/dp_228">
+        <ImageView android:id="@+id/fs_iv_stock_image" android:background="@drawable/common_default" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/fs_iv_stock_tip" android:background="@drawable/fs_label" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_20" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fs_iv_qiangguang" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <RelativeLayout android:background="#66ffffff" android:paddingLeft="@dimen/dp_10" android:layout_width="@dimen/dp_187" android:layout_height="@dimen/dp_228">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ff010000" android:ellipsize="end" android:id="@+id/fs_tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:layout_marginRight="@dimen/dp_10" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <View android:id="@+id/fs_line" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_8" android:layout_below="@+id/fs_tv_desc" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_70" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/sp_28" android:textColor="#ff930034" android:ellipsize="end" android:id="@+id/fs_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_f4" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#5a3835" android:ellipsize="end" android:id="@+id/fs_tv_saleprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_f8" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_rebate_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_131" android:layout_alignParentLeft="true">
+            <ImageView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/img_rebate_tag" android:layout_width="@dimen/dp_73" android:layout_height="@dimen/dp_16" android:scaleType="fitXY" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="#9c0b39" android:layout_gravity="center_vertical" android:id="@+id/txt_rebate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_0_7"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_buy_rebate" android:visibility="gone" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_152" android:src="@drawable/fs_rebate_coupon_list"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ProgressBar android:id="@+id/fs_pb_percent" android:visibility="gone" android:layout_width="@dimen/dp_122" android:layout_height="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_4" android:max="100" android:indeterminate="false" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#52335c" android:gravity="left" android:id="@+id/fs_tv_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#52335c" android:gravity="left" android:id="@+id/fs_tv_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.flashsale.view.GoodsItemView>

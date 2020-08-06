@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/dp_250">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_230" android:layout_alignParentBottom="true">
+        <View android:id="@+id/bg_good_view" android:background="@color/color_black_80" android:layout_width="match_parent" android:layout_height="@dimen/dp_120" android:layout_marginBottom="@dimen/dp_4" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/rl_goo_pic" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_144" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_good_pic" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_144" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_20" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/cytz_detail_back" android:layout_width="@dimen/dp_208" android:layout_height="@dimen/dp_60" android:layout_above="@+id/bg_good_view" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:id="@+id/ll_add_bug" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_128" android:layout_marginRight="@dimen/dp_208" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_add_bug" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_96" android:layout_marginBottom="@dimen/dp_16" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/ll_price" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_165" android:layout_marginRight="@dimen/dp_8" android:layout_toLeftOf="@+id/ll_add_bug" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_good_deliveryFee" android:background="@drawable/cytz_deliveryfee" android:visibility="invisible" android:layout_width="@dimen/dp_57" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_2"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/cytz_good_price" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_good_price" android:layout_width="wrap_content" android:layout_height="@dimen/dp_55" android:layout_marginTop="@dimen/dp_24" android:text="" android:lines="1" android:layout_above="@+id/ll_original_price"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_original_price" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_above="@+id/tv_good_sold">
+                <TextView android:textSize="@dimen/sp_18" android:textColor="@color/cytz_white_text_color" android:layout_gravity="center" android:id="@+id/tv_originalPrice_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格:¥"/>
+                <TextView android:textSize="@dimen/sp_18" android:textColor="@color/cytz_white_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tv_originalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/cytz_white_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_good_sold" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_14" android:lines="1" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_128" android:layout_marginRight="@dimen/dp_10" android:layout_toLeftOf="@+id/ll_price" android:layout_toRightOf="@+id/rl_goo_pic" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@color/cytz_white_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_goods_title" android:paddingRight="@dimen/dp_30" android:layout_width="match_parent" android:layout_height="@dimen/dp_58" android:layout_marginTop="@dimen/dp_10" android:maxLines="2" android:layout_alignParentTop="true"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_35" android:layout_marginBottom="@dimen/dp_20" android:layout_alignParentBottom="true">
+                <LinearLayout android:layout_gravity="center" android:id="@+id/ll_tip_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/cytz_good_service" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25"/>
+                    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/cytz_white_text_color" android:layout_gravity="center_vertical" android:id="@+id/tv_tip_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:id="@+id/ll_tip_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25">
+                    <ImageView android:background="@drawable/cytz_good_service" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25"/>
+                    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/cytz_white_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_tip_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:id="@+id/ll_tip_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25">
+                    <ImageView android:background="@drawable/cytz_good_service" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25"/>
+                    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/cytz_white_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_tip_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

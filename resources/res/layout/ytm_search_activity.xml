@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.search.view.SearchFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/search_root" android:background="@drawable/ytm_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/ytm_search_keyboard_bg" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_600" android:layout_marginLeft="@dimen/dp_60" android:layout_marginTop="@dimen/dp_73">
+        <EditText android:textSize="@dimen/sp_43" android:textColor="@android:color/white" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/search_input_key" android:background="@null" android:paddingLeft="@dimen/dp_32" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_32" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:cursorVisible="false" android:maxLength="100" android:editable="false" android:inputType="textNoSuggestions" android:privateImeOptions="HideInputView" android:imeOptions="actionSearch"/>
+        <include android:id="@+id/ime_grid" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ytm_ime_board_layout"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_520" android:layout_marginTop="@dimen/dp_70">
+        <LinearLayout android:orientation="vertical" android:id="@+id/search_example_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_hotwords_wrap" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="@string/ytm_search_input_tip_first"/>
+                <com.yunos.tvtaobao.search.view.HotWordView android:id="@+id/layout_hotword_view" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_40"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_6" android:text="@string/ytm_search_input_tip_second"/>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_20">
+                <ImageView android:id="@+id/example_image" android:background="@drawable/ytm_search_example_pic" android:layout_width="@dimen/dp_186_67" android:layout_height="@dimen/dp_253_33" android:scaleType="fitXY"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_253_33" android:layout_marginLeft="@dimen/dp_27">
+                    <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:id="@+id/example_tip_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_15"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:background="@drawable/sound_toast_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0dp"/>
+                        <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sound_toast"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@+id/nodata_lay" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_44" layout="@layout/ytm_nodata_lay"/>
+        <RelativeLayout android:focusable="true" android:layout_width="@dimen/dp_666" android:layout_height="@dimen/dp_600" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_60" android:layout_alignParentRight="true">
+            <com.yunos.tvtaobao.tvsdk.widget.focus.FocusListView android:id="@+id/result_listview" android:background="@drawable/ytm_search_result_panel" android:nextFocusLeft="@+id/ime_grid" android:nextFocusRight="@null" android:nextFocusUp="@null" android:nextFocusDown="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null"/>
+            <com.yunos.tvtaobao.search.view.CustomAlphaView android:id="@+id/favor_bottom_mask" android:background="@drawable/ytm_search_result_butom_mask" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_127" android:layout_alignParentBottom="true" android:alpha="0"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.search.view.SearchFocusPositionManager>

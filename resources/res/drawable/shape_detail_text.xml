@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <stroke android:width="1sp" android:color="@color/bs_up_sales_promotion"/>
+    <corners android:topLeftRadius="@dimen/dp_2" android:topRightRadius="@dimen/dp_2" android:bottomLeftRadius="@dimen/dp_2" android:bottomRightRadius="@dimen/dp_2"/>
+</shape>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_1"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_2"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_3"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_4"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_5"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_6"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_7"/>
+    <item android:duration="100" android:drawable="@drawable/taobao_tv_playing_anim_8"/>
+</animation-list>

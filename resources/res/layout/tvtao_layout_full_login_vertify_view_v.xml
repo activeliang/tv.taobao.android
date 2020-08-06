@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tvtaobao.android.loginverify.VerifyLayout android:layout_gravity="center_horizontal" android:id="@+id/vertify_layout" android:layout_width="@dimen/values_dp_360" android:layout_height="wrap_content" android:layout_marginTop="@dimen/values_dp_90" app:loginverify_screenType="1"/>
+</merge>

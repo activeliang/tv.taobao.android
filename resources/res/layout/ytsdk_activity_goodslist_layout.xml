@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_44" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/goodlist_title" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_34" android:singleLine="true"/>
+</merge>

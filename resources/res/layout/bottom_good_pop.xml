@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_88" android:layout_marginBottom="@dimen/dp_4" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:background="#cc000000" android:layout_width="match_parent" android:layout_height="@dimen/dp_58" android:layout_marginTop="@dimen/dp_26">
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_name_pop_bottom" android:layout_width="@dimen/dp_520" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_104" android:text="魅力不粘锅" android:singleLine="true"/>
+            <RelativeLayout android:gravity="center_vertical" android:visibility="invisible" android:layout_width="@dimen/dp_160" android:layout_height="match_parent">
+                <ImageView android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_42" android:src="@drawable/kuanghuan" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="@dimen/dp_136" android:layout_height="match_parent">
+                <TextView android:textColor="#ff5500" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvbuy_good_bottom_price" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="100000" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <ImageButton android:layout_gravity="center_vertical" android:background="@drawable/zhankai_detail" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_58" android:layout_marginLeft="@dimen/dp_8"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_good_pop_bottom" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72" android:layout_marginLeft="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_18" android:layout_below="@+id/recommend_tip_id">
+    <FrameLayout android:id="@+id/fs_fl_stock_image" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_220">
+        <ImageView android:id="@+id/fs_iv_stock_image" android:background="@drawable/common_default" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fs_iv_qiangguang" android:background="@drawable/fs_recommed_robbed" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_88"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_2" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_75">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ff000000" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/fs_tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#ff000000" android:ellipsize="end" android:id="@+id/fs_tv_saleprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/dp_13" android:textColor="#b2000000" android:ellipsize="end" android:id="@+id/fs_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_13" android:textColor="#b2000000" android:ellipsize="end" android:id="@+id/fs_tv_sale_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_1" android:layout_marginTop="@dimen/dp_4" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

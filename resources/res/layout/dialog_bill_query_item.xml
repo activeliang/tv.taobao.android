@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_search" android:layout_width="324dp" android:layout_height="@dimen/dp_84">
+    <com.tvtaobao.android.ui3.widget.RoundImageView android:id="@+id/iv_item" android:layout_width="@dimen/dp_84" android:layout_height="@dimen/dp_84" app:ui3wares_ltRadius="@dimen/dp_6" app:ui3wares_lbRadius="@dimen/dp_6"/>
+    <RelativeLayout android:layout_gravity="center_vertical" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="@dimen/dp_84" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@+id/iv_item">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="@dimen/dp_215" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:lineSpacingExtra="0sp"/>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="#ff4400" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/tv_name" android:lineSpacingExtra="0sp"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@+id/tv_date" android:paddingBottom="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentBottom="true" android:lineSpacingExtra="0sp"/>
+    </RelativeLayout>
+</RelativeLayout>

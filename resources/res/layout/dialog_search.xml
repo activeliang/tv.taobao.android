@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/bg_voice_card_mark" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_450" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dp_1160" android:layout_height="@dimen/dp_56" android:layout_marginLeft="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_184" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_56" android:src="@drawable/head_tao"/>
+        <ViewFlipper android:id="@+id/search_reply_flipper" android:layout_width="match_parent" android:layout_height="match_parent" android:inAnimation="@anim/title_translate_in" android:outAnimation="@anim/title_translate_out">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10">
+                <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center" android:paddingTop="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="您还可以说"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/select_container_layout" android:paddingTop="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/search_reply_txt" android:paddingTop="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:maxLines="1"/>
+        </ViewFlipper>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/voice_card_products" android:paddingLeft="@dimen/dp_28" android:layout_width="match_parent" android:layout_height="@dimen/dp_188" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

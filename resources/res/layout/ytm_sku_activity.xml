@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/ytm_sku_title_bg" android:focusable="false" android:layout_width="@dimen/dp_640" android:layout_height="match_parent">
+        <ImageView android:id="@+id/sku_item_image" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_640" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        <TextView android:textSize="@dimen/sp_40" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="bottom" android:id="@+id/sku_price" android:background="@color/ytm_sku_title_bg" android:paddingLeft="@dimen/dp_19" android:paddingBottom="@dimen/dp_20" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_75" android:singleLine="true" android:maxLength="20" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="bottom" android:id="@+id/sku_price_presale" android:paddingBottom="@dimen/dp_24" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/dp_75" android:layout_marginLeft="@dimen/dp_40" android:maxLines="1" android:layout_toRightOf="@+id/sku_price" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/sp_28" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/sku_item_title" android:background="@color/ytm_sku_title_bg" android:paddingLeft="@dimen/dp_19" android:paddingTop="@dimen/dp_5" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:maxLines="2" android:layout_above="@+id/sku_price"/>
+        <include android:id="@+id/sku_qr_code" android:visibility="gone" layout="@layout/ytbv_qrcode_layout"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/ytm_sku_bg" android:paddingLeft="@dimen/dp_48" android:paddingTop="@dimen/dp_35" android:paddingRight="@dimen/dp_48" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_590">
+            <ScrollView android:id="@+id/sku_prop_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/dp_590">
+                <LinearLayout android:orientation="vertical" android:id="@+id/sku_prop_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView>
+            <ImageView android:id="@+id/sku_prop_top_mask" android:background="@drawable/ytm_sku_mask_top" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+            <ImageView android:id="@+id/sku_prop_bottom_mask" android:background="@drawable/ytm_sku_mask_bottom" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_32" android:textColor="@color/ytm_sku_done_unfocus_text_color" android:gravity="center" android:id="@+id/sku_done_text_view" android:background="@color/ytm_button_normal" android:focusable="true" android:layout_width="@dimen/dp_540" android:layout_height="@dimen/dp_67" android:layout_marginBottom="@dimen/dp_30" android:text="@string/ytbv_confirm" android:lines="1" android:includeFontPadding="false" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

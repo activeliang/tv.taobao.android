@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tvsdk.widget.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/dp_6" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/card_coupon_item_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_4" android:text="@string/ytm_coupon_title" android:includeFontPadding="false"/>
+    <com.yunos.tvtaobao.tvsdk.widget.focus.FocusLinearLayout android:orientation="horizontal" android:id="@+id/hongbao_linearlayout" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/card_coupon_item_text">
+        <include layout="@layout/ytm_hongbao_item"/>
+        <include layout="@layout/ytm_hongbao_item"/>
+        <include layout="@layout/ytm_hongbao_item"/>
+        <include layout="@layout/ytm_hongbao_item"/>
+        <include layout="@layout/ytm_hongbao_item"/>
+    </com.yunos.tvtaobao.tvsdk.widget.focus.FocusLinearLayout>
+    <com.yunos.tvtaobao.tvsdk.widget.focus.FocusLinearLayout android:orientation="horizontal" android:id="@+id/coupon_linearlayout" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/card_coupon_item_text">
+        <include layout="@layout/ytm_coupon_item"/>
+        <include layout="@layout/ytm_coupon_item"/>
+        <include layout="@layout/ytm_coupon_item"/>
+    </com.yunos.tvtaobao.tvsdk.widget.focus.FocusLinearLayout>
+</com.yunos.tvtaobao.tvsdk.widget.focus.FocusRelativeLayout>

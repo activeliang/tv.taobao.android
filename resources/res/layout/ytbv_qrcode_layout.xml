@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/qrcode_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/dp_640" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_32" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/qrcode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+        <ImageView android:id="@+id/qrcode_image" android:background="@android:color/white" android:layout_width="@dimen/dp_408" android:layout_height="@dimen/dp_408" android:layout_marginTop="@dimen/dp_24"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_36">
+            <View android:background="#99e6e2de" android:layout_width="@dimen/dp_99" android:layout_height="@dimen/dp_1"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#99ffffff" android:id="@+id/qrcode_dsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:text="@string/ytbv_qr_code_dsc" android:singleLine="true" android:includeFontPadding="false"/>
+            <View android:background="#99e6e2de" android:layout_width="@dimen/dp_99" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_12"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ytbv_tianmao_icon"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_36" android:src="@drawable/ytbv_taobao_icon"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_36" android:src="@drawable/ytbv_alipay_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_40">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_shop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_160" android:layout_marginBottom="@dimen/dp_26">
+        <View android:background="@color/ytsdk_detail_not_buysupport_price_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1_3" android:layout_marginRight="@dimen/dp_20" android:layout_toLeftOf="@+id/layout_like" android:layout_centerVertical="true"/>
+        <LinearLayout android:id="@+id/layout_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_27" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/like" android:layout_toLeftOf="@+id/txt"/>
+            <TextView android:textSize="@dimen/dp_32" android:textColor="@color/ytm_white" android:id="@+id/txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你可能还喜欢" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <View android:background="@color/ytsdk_detail_not_buysupport_price_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1_3" android:layout_marginLeft="@dimen/dp_20" android:layout_toRightOf="@+id/layout_like" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

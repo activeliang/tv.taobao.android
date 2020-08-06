@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true" android:drawable="@drawable/new_shop_cart_button_chose_focuse_bg"/>
+    <item android:state_focused="false" android:drawable="@drawable/new_shop_cart_button_divider_shape"/>
+</selector>

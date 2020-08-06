@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.widget.FocusNoDeepLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_12" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/coupon_layout" android:background="@drawable/ytm_coupon_red_bg" android:layout_width="@dimen/dp_376" android:layout_height="@dimen/dp_176">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="#64000000" android:ellipsize="end" android:id="@+id/coupon_name" android:layout_width="@dimen/dp_232" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_10" android:singleLine="true" android:includeFontPadding="false"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/dp_250" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/coupon_price" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false"/>
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_12" android:layout_toRightOf="@+id/coupon_price">
+                    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/coupon_use_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/coupon_limited_prompt" android:background="@drawable/ytm_coupon_use_area_bg" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_2" android:singleLine="true" android:includeFontPadding="false"/>
+                    <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/ytm_coupon_title" android:singleLine="true" android:includeFontPadding="false"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_124" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="#80000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ytm_hongbao_expire_text" android:singleLine="true" android:includeFontPadding="false"/>
+                <TextView android:textSize="16sp" android:textColor="#80000000" android:gravity="center" android:id="@+id/coupon_expire_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:lines="2" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.biz.widget.FocusNoDeepLinearLayout>

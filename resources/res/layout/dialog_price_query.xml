@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/bg_voice_card_mark" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_450" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tts_and_tip" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginBottom="@dimen/dp_135" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_60" android:src="@drawable/head_tao"/>
+        <com.tvtaobao.voicesdk.view.AutoTextView android:id="@+id/voice_card_search_reply" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_weight="1" app:textSize="@dimen/sp_22" app:textcolor="#ffffff" app:lines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_32" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_empty" android:visibility="gone" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_120"/>
+        <RelativeLayout android:id="@+id/rl_price_info" android:background="@drawable/bg_price_query" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_84" android:layout_marginLeft="@dimen/dp_60" android:layout_marginRight="@dimen/dp_60">
+            <RelativeLayout android:id="@+id/rl_item_info" android:layout_width="@dimen/dp_564" android:layout_height="@dimen/dp_84">
+                <com.tvtaobao.voicesdk.view.RoundImageView android:id="@+id/iv_pic" android:layout_width="@dimen/dp_84" android:layout_height="@dimen/dp_84" android:layout_marginRight="@dimen/dp_10"/>
+                <TextView android:textSize="@dimen/sp_18" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_toRightOf="@+id/iv_pic" android:lineSpacingExtra="0sp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_pic" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/sp_40" android:textColor="#ff4400" android:gravity="bottom" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_7" android:text=""/>
+                    <ImageView android:layout_gravity="bottom" android:id="@+id/iv_direction" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_22" android:src="@drawable/icon_price_down"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_tendency_chart_price" android:layout_width="@dimen/dp_560" android:layout_height="@dimen/dp_84" android:layout_marginRight="@dimen/dp_16" android:layout_toRightOf="@+id/rl_item_info"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

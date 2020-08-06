@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/body" android:background="@android:color/transparent" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar android:id="@android:id/progress" android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_180" android:max="20000"/>
+</LinearLayout>

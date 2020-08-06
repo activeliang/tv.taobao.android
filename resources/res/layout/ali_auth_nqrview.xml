@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ali_auth_nqrview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ali_auth_nqrview_lay_errortips" android:background="#fbfbfb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ali_auth_nqrview_lay_error_pic" android:paddingTop="@dimen/ali_auth_space_20" android:layout_width="@android:dimen/notification_large_icon_height" android:layout_height="@android:dimen/notification_large_icon_height" android:src="@android:drawable/ic_delete"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/ali_auth_nqrview_error_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auth_sdk_message_qr_expired" android:ems="10" android:inputType="textPersonName"/>
+            <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/ali_auth_nqrview_error_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ali_auth_space_10" android:text="@string/auth_sdk_message_qr_expired_sub" android:ems="10" android:inputType="textPersonName"/>
+            <Button android:id="@+id/ali_auth_nqrview_error_refresh" android:background="@drawable/aliuser_btn_lucency" android:layout_width="@dimen/ali_auth_space_160" android:layout_height="36dp" android:layout_marginTop="@dimen/ali_auth_space_10" android:text="@string/auth_sdk_message_qr_refresh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ali_auth_nqrview_lay_scanedtips" android:background="#fbfbfb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ali_auth_nqrview_lay_scaned_pic" android:layout_width="@dimen/ali_auth_titlebar_height" android:layout_height="@dimen/ali_auth_titlebar_height" android:layout_marginTop="@dimen/ali_auth_space_20" android:src="@android:drawable/presence_online" android:cropToPadding="false"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/ali_auth_nqrview_scaned_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ali_auth_space_10" android:text="@string/auth_sdk_message_qr_scaned" android:ems="10" android:inputType="textPersonName"/>
+            <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/ali_auth_nqrview_scaned_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ali_auth_space_10" android:text="@string/auth_sdk_message_qr_scaned_sub" android:ems="10" android:inputType="textPersonName"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ali_auth_nqrview_lay_successedtips" android:background="#fbfbfb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/ali_auth_titlebar_height" android:layout_height="@dimen/ali_auth_titlebar_height" android:layout_marginTop="@dimen/ali_auth_space_20" android:src="@android:drawable/presence_online" android:cropToPadding="false"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ali_auth_space_10" android:text="@string/auth_sdk_message_qr_login_success" android:ems="10" android:inputType="textPersonName"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/ali_auth_nqrview_lay_qr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/ali_auth_nqrview_qr_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@android:color/darker_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/ali_auth_verify_rl" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.widget.GridViewFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/focus_flip_gridView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/ytm_my_taobao_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_43" android:textColor="@color/ytm_white" android:layout_gravity="center_horizontal" android:id="@+id/txt_colllect_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_45" android:text="@string/ytsdk_collects_title" android:singleLine="true"/>
+        <ImageView android:layout_gravity="bottom" android:id="@+id/img_guess_like_tag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/tvtao_guesslike_tips_bg"/>
+        <com.yunos.tvtaobao.biz.widget.RefreshDataFocusFlipGridView android:id="@+id/collects_grid" android:paddingLeft="@dimen/dp_46" android:paddingTop="@dimen/dp_122" android:paddingRight="@dimen/dp_46" android:paddingBottom="@dimen/dp_92" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/empty_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ytsdk_ui2_nothing"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@color/ytm_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/ytsdk_collects_no_data_tip"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.yunos.tvtaobao.biz.widget.GridViewFocusPositionManager>

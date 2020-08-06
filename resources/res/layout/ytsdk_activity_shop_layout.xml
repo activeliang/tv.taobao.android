@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_44" android:textColor="@color/ytsdk_detail_font_shadow" android:ellipsize="end" android:id="@+id/shop_name" android:visibility="invisible" android:layout_width="@dimen/dp_400" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_286" android:layout_marginTop="@dimen/dp_40" android:singleLine="true" android:marqueeRepeatLimit="1"/>
+    <ImageView android:id="@+id/shop_logo_imageview" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_0" android:layout_marginTop="@dimen/dp_589"/>
+    <RelativeLayout android:gravity="right" android:id="@+id/shop_info" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_604" android:layout_marginTop="@dimen/dp_70" android:layout_marginRight="@dimen/dp_46">
+        <ViewFlipper android:id="@+id/flipper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/match_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/match_description_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/attitude" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/attitude_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/delivery_speed" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/delivery_speed_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30"/>
+            </LinearLayout>
+        </ViewFlipper>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/ytsdk_shop_txt_shade" android:id="@+id/location" android:paddingLeft="@dimen/dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_toRightOf="@+id/flipper"/>
+    </RelativeLayout>
+</merge>

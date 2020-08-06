@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:minLevel="0" android:maxLevel="0">
+        <shape>
+            <solid android:color="@color/alibc_transparent"/>
+        </shape>
+    </item>
+    <item android:minLevel="1" android:maxLevel="1">
+        <layer-list>
+            <item>
+                <shape>
+                    <stroke android:width="@dimen/dp_2" android:color="@color/colorWhite"/>
+                    <solid android:color="#00ffffff"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:minLevel="2" android:maxLevel="2">
+        <layer-list>
+            <item android:drawable="@drawable/tvtao_icon_sku_prop_selected" android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4"/>
+        </layer-list>
+    </item>
+    <item android:minLevel="3" android:maxLevel="3">
+        <layer-list>
+            <item android:drawable="@drawable/tvtao_icon_sku_select_tag" android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4"/>
+            <item>
+                <shape>
+                    <stroke android:width="@dimen/dp_2" android:color="@color/colorWhite"/>
+                    <solid android:color="#00ffffff"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</level-list>

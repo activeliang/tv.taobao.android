@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/HomeContainer" android:background="@drawable/jhs_home_category_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/title" android:background="@drawable/jhs_bg_home_category_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_177">
+        <ImageView android:gravity="center" android:id="@+id/title_icon" android:layout_width="wrap_content" android:layout_height="@dimen/dp_70" android:layout_marginTop="@dimen/dp_30" android:src="@drawable/jhs_logo"/>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/viewpager" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_100"/>
+        <LinearLayout android:gravity="center" android:id="@+id/load_progress" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <com.yunos.tvtaobao.juhuasuan.homepage.ShadeFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

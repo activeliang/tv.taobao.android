@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bottom_gradian_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_476">
+    <RelativeLayout android:id="@+id/rl_imageView" android:layout_width="match_parent" android:layout_height="@dimen/dp_232">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_weitao" android:background="@drawable/bg_item" android:visibility="invisible" android:layout_width="@dimen/dp_232" android:layout_height="@dimen/dp_232" android:layout_marginLeft="@dimen/dp_96" android:layout_alignParentLeft="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/text_color_white" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_176" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_28">
+                <ImageView android:id="@+id/iv_weitao_pic" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_16"/>
+                <TextView android:textSize="@dimen/sp_22" android:textColor="@color/cytz_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_weitao_name" android:layout_width="@dimen/dp_152" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_16" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_weitao_shield" android:background="@drawable/bg_item" android:visibility="invisible" android:layout_width="@dimen/dp_232" android:layout_height="@dimen/dp_232" android:layout_marginLeft="@dimen/dp_96" android:layout_alignParentLeft="true">
+            <RelativeLayout android:background="@drawable/bg_weitao_shield" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_176" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_28">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_weitao_shield_check" android:background="@color/cytz_blue_90" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentBottom="true">
+                    <CheckBox android:id="@+id/cb_wt_check" android:background="@drawable/wt_unfocus_check" android:focusable="true" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_30" android:button="@null"/>
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/text_color_white" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_weitao_tip" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:text="显示微淘动态"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/ll_weitao_remove" android:background="@color/color_black_70" android:visibility="invisible" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_176" android:layout_marginLeft="@dimen/dp_124" android:layout_marginTop="@dimen/dp_28" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已取消关注"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ll_lastVideo" android:background="@drawable/bg_item" android:visibility="invisible" android:layout_width="@dimen/dp_232" android:layout_height="@dimen/dp_232" android:layout_marginLeft="@dimen/dp_448" android:layout_alignParentLeft="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/text_color_white" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_176" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_28">
+                <ImageView android:id="@+id/iv_good_last" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_100" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/sp_21" android:textColor="@color/cytz_text_color" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/tv_good_name_last" android:layout_width="@dimen/dp_152" android:layout_height="@dimen/dp_52" android:layout_marginTop="@dimen/dp_12" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ll_nextVideo" android:background="@drawable/bg_item" android:visibility="invisible" android:layout_width="@dimen/dp_232" android:layout_height="@dimen/dp_232" android:layout_marginRight="@dimen/dp_448" android:layout_alignParentRight="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/text_color_white" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_176" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_28">
+                <ImageView android:id="@+id/iv_good_next" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_100" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/sp_21" android:textColor="@color/cytz_text_color" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/tv_good_name_next" android:layout_width="@dimen/dp_152" android:layout_height="@dimen/dp_52" android:layout_marginTop="@dimen/dp_12" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/notify" android:background="@drawable/back_notify" android:layout_width="@dimen/dp_208" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_22" android:layout_below="@+id/rl_imageView" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_104" android:layout_marginTop="@dimen/dp_220">
+        <RelativeLayout android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_104" android:layout_marginLeft="@dimen/dp_160" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/iv_weitao_guanzhu" android:background="@drawable/iv_wt_not_gz" android:focusable="true" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_36" android:layout_marginLeft="@dimen/dp_32" android:layout_marginTop="@dimen/dp_22"/>
+            <ImageView android:id="@+id/iv_weitao_guanzhu_focus" android:background="@drawable/iv_wt_not_gz_focus" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_next_last_btn_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_104" android:layout_marginTop="@dimen/dp_220">
+        <RelativeLayout android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_104" android:layout_marginLeft="@dimen/dp_512">
+            <ImageView android:id="@+id/last_video_iv" android:background="@drawable/last_video_focus" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/ib_last" android:focusable="true" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_36" android:layout_marginLeft="@dimen/dp_32" android:layout_marginTop="@dimen/dp_22" android:src="@drawable/last_play"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_104" android:layout_marginLeft="@dimen/dp_48">
+            <ImageView android:id="@+id/next_video_iv" android:background="@drawable/next_video_focus" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/ib_next" android:focusable="true" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_36" android:layout_marginLeft="@dimen/dp_32" android:layout_marginTop="@dimen/dp_22" android:src="@drawable/next_play"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/progressbar_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_175" android:layout_marginTop="@dimen/dp_300">
+        <RelativeLayout android:id="@+id/dddd" android:layout_width="match_parent" android:layout_height="@dimen/dp_38" android:layout_marginTop="@dimen/dp_58">
+            <ProgressBar android:id="@+id/progressbar" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_6" android:layout_marginLeft="@dimen/dp_160" android:layout_marginRight="@dimen/dp_160" android:progress="0" android:progressDrawable="@drawable/progressbar_bg" android:layout_centerInParent="true" style="?android:attr/progressBarStyleHorizontal"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/control_relative" android:background="@drawable/control_bg" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_80" android:layout_alignParentTop="true">
+            <ImageButton android:id="@+id/ib_left" android:background="@drawable/kuaitui_selector" android:layout_width="@dimen/dp_48" android:layout_height="match_parent"/>
+            <ImageButton android:id="@+id/ib_center" android:background="@drawable/stop_play_selector" android:focusable="true" android:layout_width="@dimen/dp_64" android:layout_height="match_parent" android:layout_toRightOf="@+id/ib_left"/>
+            <ImageButton android:id="@+id/ib_right" android:background="@drawable/kuaijin_selector" android:layout_width="@dimen/dp_48" android:layout_height="match_parent" android:layout_toRightOf="@+id/ib_center"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/reached_time" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_38" android:layout_marginTop="@dimen/dp_58" android:text="00:00"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/total_time" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_38" android:layout_marginTop="@dimen/dp_58" android:text="00:00" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_contain_iv_on_progress" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_96" android:layout_marginLeft="@dimen/dp_110" android:layout_marginTop="@dimen/dp_30">
+            <ImageView android:id="@+id/iv_on_progressbar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/progress_iv_onfocus"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

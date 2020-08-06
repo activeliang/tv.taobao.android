@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/full_screen_prompt_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp_36" android:textColor="@color/bs_up_update_white" android:gravity="center" android:id="@+id/bs_up_update_text" android:layout_width="@dimen/dp_960" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_320" android:text="@string/bs_up_prompt_content" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bs_up_update_btn_layout" android:layout_width="@dimen/dp_480" android:layout_height="@dimen/dp_96" android:layout_marginLeft="@dimen/dp_400" android:layout_marginTop="@dimen/dp_400">
+        <Button android:textSize="@dimen/sp_22" android:textColor="@color/bs_up_update_white" android:gravity="center" android:id="@+id/bs_up_update_btn_leave" android:background="@drawable/full_screen_prompt_btn_bg" android:layout_width="@dimen/dp_240" android:layout_height="match_parent" android:text="@string/bs_up_leave"/>
+        <Button android:textSize="@dimen/sp_22" android:textColor="@color/bs_up_update_white" android:gravity="center" android:id="@+id/bs_up_update_btn_now" android:background="@drawable/full_screen_prompt_btn_bg" android:layout_width="@dimen/dp_240" android:layout_height="match_parent" android:text="@string/bs_up_update"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/bs_up_update_progress" android:background="@drawable/shape_progressbar_bg" android:visibility="gone" android:layout_width="@dimen/dp_472" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_404" android:layout_marginTop="@dimen/dp_440" android:max="100" style="@style/StyleProgressBarMini"/>
+</RelativeLayout>

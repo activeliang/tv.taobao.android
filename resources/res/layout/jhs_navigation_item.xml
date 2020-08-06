@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_110" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2">
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@drawable/jhs_navigation_text_selector" android:ellipsize="marquee" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/item_tv" android:background="@drawable/jhs_navigation_item_bg_selector" android:paddingTop="13dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+    </LinearLayout>
+</LinearLayout>

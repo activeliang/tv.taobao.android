@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/pingpai_mainFramelayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_right" android:background="@drawable/jhs_bj_top" android:visibility="visible" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_86">
+        <TextView android:textSize="@dimen/dp_24" android:id="@+id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:layout_toLeftOf="@+id/divider_line" android:layout_centerVertical="true"/>
+        <View android:id="@+id/divider_line" android:background="@android:color/white" android:layout_width="@dimen/dp_2" android:layout_height="@dimen/dp_24" android:layout_marginRight="@dimen/dp_16" android:layout_toLeftOf="@+id/num" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/dp_24" android:id="@+id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:text="品牌" android:layout_toLeftOf="@+id/category_all" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/category_all" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_18" android:src="@drawable/jhs_btn_category_all_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/jhs_brand_category_bj_xml" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_86">
+        <RelativeLayout android:id="@+id/pingpai_default_display" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_234">
+            <ImageView android:id="@+id/pinpai_default_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jhs_na_data_icon" android:scaleType="center" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/dp_24" android:textColor="@color/jhs_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/jhs_brand_list_null" android:singleLine="true" android:layout_below="@+id/pinpai_default_image" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/pingpai_relative" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_640" android:layout_marginBottom="@dimen/dp_20">
+        <TextView android:textSize="@dimen/dp_30" android:textColor="@color/jhs_brand_num_color" android:id="@+id/current_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jhs_num_1" android:layout_toLeftOf="@+id/line" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/dp_20" android:textColor="@color/jhs_brand_num_color" android:id="@+id/line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jhs_page_fuhao" android:layout_alignBaseline="@+id/current_num" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/dp_20" android:textColor="@color/jhs_brand_num_color" android:id="@+id/all_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/line" android:layout_alignBaseline="@+id/current_num" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

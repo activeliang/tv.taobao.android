@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tradelink.view.BuildOrderRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/sp_22" android:textColor="@color/ytm_black" android:id="@+id/buildorder_address_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="@color/ytm_black" android:id="@+id/buildorder_address_detailed" android:paddingTop="@dimen/dp_9" android:paddingBottom="@dimen/dp_9" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/ytm_buildorder_address" android:id="@+id/buildorder_address_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</com.yunos.tvtaobao.tradelink.view.BuildOrderRelativeLayout>

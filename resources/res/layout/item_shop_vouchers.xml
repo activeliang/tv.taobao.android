@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" app:borderview_drawable_res="@drawable/good_bac_focus_select" app:borderview_height="@dimen/dp_148" app:borderview_width="@dimen/dp_508">
+    <View android:layout_gravity="center" android:id="@+id/focus_bg" android:background="@drawable/good_bac_focus_select" android:visibility="invisible" android:layout_width="@dimen/dp_510" android:layout_height="@dimen/dp_150"/>
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/bg_take_out_red_package" android:paddingLeft="@dimen/dp_20" android:layout_width="@dimen/dp_500" android:layout_height="@dimen/dp_140">
+        <TextView android:textSize="@dimen/sp_70" android:textColor="#fffcb2" android:id="@+id/txt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_f6"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffff" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_f8" android:layout_below="@+id/txt_price"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffff" android:id="@+id/txt_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txt_name"/>
+        <TextView android:textSize="@dimen/sp_28" android:textColor="#ffffff" android:id="@+id/txt_get_package" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/values_dp_30" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/dp_4"/>
+    </RelativeLayout>
+</FrameLayout>

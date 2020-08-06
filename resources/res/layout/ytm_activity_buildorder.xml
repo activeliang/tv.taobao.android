@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/buildorder_mainlayout" android:background="#ff23222c" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.tradelink.view.FocusedRelativeLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/ytm_buildorder_info_layout" android:visibility="gone" layout="@layout/ytm_buildorder_info"/>
+        <include android:id="@+id/ytm_buildorder_buyorder_layout" android:visibility="gone" layout="@layout/ytm_buildorder_buyorder"/>
+    </com.yunos.tvtaobao.tradelink.view.FocusedRelativeLayout>
+</com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager>

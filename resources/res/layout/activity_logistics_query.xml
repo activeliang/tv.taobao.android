@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_full_screen_search" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/view_voice_assistant"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_logistics_detail_items" android:paddingLeft="@dimen/dp_80" android:layout_width="match_parent" android:layout_height="@dimen/dp_520" app:layout_constraintBottom_toBottomOf="0"/>
+    <ImageView android:id="@+id/iv_bill_query_error_icon" android:visibility="gone" android:layout_width="@dimen/dp_336" android:layout_height="@dimen/dp_296" android:layout_marginTop="@dimen/dp_200" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="24sp" android:textColor="@color/color_99ffffff" android:gravity="center_horizontal" android:id="@+id/tv_bill_query_error_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="没有消费记录哦" android:lineSpacingExtra="0sp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_bill_query_error_icon" app:layout_goneMarginTop="@dimen/dp_508"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepRelativeout android:gravity="center" android:orientation="vertical" android:id="@+id/dialog_layout" android:background="@drawable/button_dialog_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_524" android:layout_height="@dimen/dp_260" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_34" android:textColor="@color/new_cart_black" android:gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="@dimen/dp_190" android:layout_above="@+id/view"/>
+        <View android:id="@+id/view" android:background="@color/aliuser_color_line_gray" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_above="@+id/foot"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/foot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_30" android:textColor="@color/new_cart_grey" android:gravity="center" android:layout_gravity="center" android:id="@+id/negativeButton" android:focusable="true" android:nextFocusRight="@+id/positiveButton" android:layout_width="0dp" android:layout_height="@dimen/dp_70" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_30" android:textColor="@color/ytm_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/positiveButton" android:background="@drawable/gradient_dialog_right_focus" android:focusable="true" android:nextFocusLeft="@+id/negativeButton" android:layout_width="0dp" android:layout_height="@dimen/dp_70" android:layout_weight="1"/>
+        </LinearLayout>
+    </com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepRelativeout>
+</RelativeLayout>

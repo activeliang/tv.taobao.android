@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dialog_update_btn_layout" android:background="@drawable/top_prompt_dialog_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_224">
+        <TextView android:textSize="@dimen/sp_26" android:textColor="@color/bs_up_update_white" android:id="@+id/update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:text="一二三四五六七八九十" android:singleLine="true" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="@dimen/sp_22" android:textColor="@color/bs_up_update_white" android:id="@+id/dialog_update_top_later" android:background="@drawable/top_prompt_dialog_btn_bg" android:layout_width="@dimen/dp_224" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_428" android:layout_marginTop="@dimen/dp_64" android:text="残忍拒绝"/>
+        <Button android:textSize="@dimen/sp_22" android:textColor="@color/bs_up_update_white" android:id="@+id/dialog_update_top_now" android:background="@drawable/top_prompt_dialog_btn_bg" android:layout_width="@dimen/dp_224" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_628" android:layout_marginTop="@dimen/dp_64" android:text="升级新版本"/>
+    </RelativeLayout>
+</LinearLayout>

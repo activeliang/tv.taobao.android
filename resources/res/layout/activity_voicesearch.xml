@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_full_screen_search" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/view_voice_assistant"/>
+    <com.yunos.voice.view.SearchTagView android:id="@+id/stv_goods" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_132"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/voice_search_not_result" android:visibility="gone" android:layout_width="@dimen/dp_336" android:layout_height="@dimen/dp_336" android:layout_marginLeft="@dimen/dp_472" android:layout_marginTop="@dimen/dp_212">
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/dp_296" android:src="@drawable/icon_search_not_result" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/color_99ffffff" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有相关商品"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/voice_chat_jinnang" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_184"/>
+    <com.yunos.voice.view.TurnPageRecyclerView android:id="@+id/voice_search_list" android:paddingLeft="@dimen/dp_40" android:paddingRight="@dimen/dp_40" android:layout_width="match_parent" android:layout_height="@dimen/dp_430" android:layout_below="@+id/voice_chat_jinnang"/>
+</RelativeLayout>

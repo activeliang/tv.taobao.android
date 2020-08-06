@@ -1,0 +1,31 @@
+package com.yunos.tv.core.config;
+
+public enum TvOptionsChannel {
+    OTHER,
+    SEARCH,
+    RETRIEVE,
+    TTTJ,
+    TMCS,
+    JHS,
+    SNYG,
+    TAO_QG,
+    TMGJ,
+    CZ_YK,
+    CZ_HF,
+    SPP,
+    SP_HC,
+    COLLECT,
+    ORDER,
+    HC,
+    FZ_TRIP,
+    GUESSLIKE,
+    SHOPCART,
+    FAST_ORDER,
+    VOICE_SEARCH_ORDER,
+    SEARCH_JIAGOU,
+    VOICE_VIEW_MORE,
+    FIND_SAME,
+    FOOT_MARK,
+    DAILY_GOOD_SHOP,
+    TAOBAO_TV
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_eleme_create_order" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/take_out_create_order_goods_info"/>
+    <include layout="@layout/take_out_create_order_other_info"/>
+</android.support.constraint.ConstraintLayout>

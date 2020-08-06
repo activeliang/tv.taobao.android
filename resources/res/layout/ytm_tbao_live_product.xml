@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_first_module" android:background="@color/ytbv_shadow_color_90" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:layout_marginLeft="@dimen/dp_24" android:layout_marginRight="@dimen/dp_24">
+        <ImageView android:layout_width="@dimen/dp_88" android:layout_height="@dimen/dp_32" android:src="@drawable/tbao_live_logo"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tbao_live_title" android:layout_width="@dimen/dp_308" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_8" android:lines="1"/>
+    </LinearLayout>
+    <View android:background="#334455" android:layout_width="match_parent" android:layout_height="@dimen/dp_2" android:layout_marginLeft="@dimen/dp_24" android:layout_marginRight="@dimen/dp_24"/>
+    <RelativeLayout android:id="@+id/not_product_prompt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天啦噜\10主播还未去分享宝贝" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.yunos.tvtaobao.live.view.ZPListView android:id="@+id/rv_live_product" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

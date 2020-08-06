@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.live.view.LiveFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.taobao.taobaoavsdk.widget.media.TaoLiveVideoView android:id="@+id/vv_live" android:focusable="false" android:layout_width="@dimen/dp_414" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_392"/>
+        <RelativeLayout android:id="@+id/tbao_custom_live_info_prompt" android:background="@drawable/ytm_live_background" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="#334455" android:layout_width="@dimen/dp_2" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主播暂时离开中\10请稍等" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/live_float_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:layout_width="@dimen/dp_392" android:layout_height="match_parent" layout="@layout/ytm_tbao_live_product"/>
+                <RelativeLayout android:focusable="false" android:layout_width="@dimen/dp_414" android:layout_height="match_parent">
+                    <RelativeLayout android:id="@+id/tbao_live_info_prompt" android:background="@drawable/ytm_live_background" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <View android:background="#334455" android:layout_width="@dimen/dp_2" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+                        <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主播暂时离开中\10请稍等" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <include android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/ytm_tbao_live_detail"/>
+            </LinearLayout>
+            <include android:layout_width="@dimen/dp_548" android:layout_height="@dimen/dp_128" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/ytm_tbao_live_function_btns"/>
+            <TextView android:textSize="22sp" android:textColor="@color/ytbv_white" android:gravity="center" android:id="@+id/tv_live_list" android:background="@drawable/bg_tv_live_list" android:paddingLeft="@dimen/dp_26" android:paddingRight="@dimen/dp_26" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_62" android:layout_marginRight="@dimen/dp_300" android:layout_marginBottom="@dimen/dp_128" android:text="@string/ytsdk_detail_live_list" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:lineSpacingExtra="0sp"/>
+            <com.yunos.tvtaobao.live.view.core.TBaoPeriscopeLayout android:id="@+id/hl_praise" android:layout_width="@dimen/dp_166" android:layout_height="@dimen/dp_480" android:layout_marginRight="@dimen/dp_124" android:layout_marginBottom="@dimen/dp_130" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <include android:layout_width="@dimen/dp_376" android:layout_height="@dimen/dp_552" android:layout_marginRight="@dimen/dp_148" android:layout_marginBottom="@dimen/dp_80" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/ytm_live_tbao_qrcode"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/tbao_live_loading_img" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp_26" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/tv_message_toast" android:background="@drawable/ytm_live_login_hint_bg" android:padding="@dimen/dp_42" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="登录看淘现场，千万壕礼大派送"/>
+</com.yunos.tvtaobao.live.view.LiveFocusPositionManager>

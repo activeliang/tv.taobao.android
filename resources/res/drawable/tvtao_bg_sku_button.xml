@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="false">
+        <shape>
+            <stroke android:width="@dimen/dp_2" android:color="@color/color99bbdd"/>
+            <corners android:radius="@dimen/dp_5"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:drawable="@drawable/tvtao_icon_sku_button_focus"/>
+</selector>

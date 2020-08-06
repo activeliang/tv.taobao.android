@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tvsdk.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/ui3wares_normal_dialog_bg" android:paddingLeft="@dimen/values_dp_40" android:paddingRight="@dimen/values_dp_40" android:layout_width="@dimen/values_dp_400" android:layout_height="@dimen/values_dp_160" android:minWidth="@dimen/values_dp_400">
+    <TextView android:textSize="@dimen/sp_30" android:textColor="@color/white" android:gravity="center" android:id="@+id/rv_daren" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/daren_home_follow_success"/>
+</com.yunos.tvtaobao.tvsdk.widget.LinearLayout>

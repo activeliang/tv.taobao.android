@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/menu_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/values_dp_56">
+    <View android:id="@+id/background" android:background="#55000000" android:layout_width="@dimen/values_dp_44" android:layout_height="match_parent" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <Space android:id="@+id/start" android:layout_width="1dp" android:layout_height="0dp" android:layout_marginTop="@dimen/values_dp_142" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <Space android:id="@+id/id_place_holder_1" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_2" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_3" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_4" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_5" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_6" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_7" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_8" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_9" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_10" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_11" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_12" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_13" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_14" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_15" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_16" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_17" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_18" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_19" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_20" android:layout_width="0dp" android:layout_height="0dp"/>
+    <Space android:id="@+id/id_place_holder_21" android:layout_width="0dp" android:layout_height="0dp"/>
+</android.support.constraint.ConstraintLayout>

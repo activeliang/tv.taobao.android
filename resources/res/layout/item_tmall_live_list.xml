@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/ytm_live_first_focus" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:focusable="true" android:layout_width="@dimen/dp_384" android:layout_height="@dimen/dp_116">
+    <ImageView android:id="@+id/iv_tmall_live_icon" android:layout_width="@dimen/dp_176" android:layout_height="@dimen/dp_100" android:layout_marginLeft="@dimen/dp_8"/>
+    <ImageView android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/live_player_icon" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/state_of_play" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_8" android:layout_toRightOf="@+id/iv_tmall_live_icon"/>
+    <TextView android:textSize="@dimen/sp_22" android:textColor="#000000" android:ellipsize="end" android:id="@+id/iv_tmall_live_name" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_76" android:layout_marginLeft="@dimen/dp_8" android:lines="2" android:layout_toRightOf="@+id/iv_tmall_live_icon" android:layout_below="@+id/state_of_play"/>
+</RelativeLayout>

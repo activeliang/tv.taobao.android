@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/qrcode_layout" android:background="#e60e1215" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/payment_background_otherqr_dialog" android:layout_width="@dimen/dp_480" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_60" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_26" android:textColor="@color/payment_color_black" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_qrcode_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲，已为您下单啦" android:singleLine="true" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/sp_36" android:textColor="@color/payment_color_black" android:gravity="center" android:id="@+id/tv_qrcode_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单合计 ¥ 99.99" android:lines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_26" android:textColor="@color/payment_color_black" android:gravity="center" android:id="@+id/errordesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:lines="1" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/sp_26" android:textColor="@color/payment_color_black" android:gravity="center" android:id="@+id/message1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开【手机淘宝】扫码完成付款" android:includeFontPadding="false"/>
+        <ImageView android:id="@+id/qrcode_image" android:background="@android:color/white" android:layout_width="@dimen/dp_324" android:layout_height="@dimen/dp_324" android:layout_marginTop="@dimen/dp_12"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_order_info" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/voice_chat_head" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:layout_marginLeft="@dimen/dp_52" android:layout_marginTop="@dimen/dp_42" android:src="@drawable/head_tao"/>
+    <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/novice_guide_reply" android:layout_width="@dimen/dp_672" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_56" android:lines="2" android:layout_toRightOf="@+id/voice_chat_head"/>
+    <ImageView android:layout_width="@dimen/dp_1160" android:layout_height="@dimen/dp_528" android:layout_marginTop="@dimen/dp_132" android:src="@drawable/iv_novice_guide" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

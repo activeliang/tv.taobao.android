@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tbao_live_comment_layout" android:paddingLeft="@dimen/dp_18" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_live_toplayout" android:background="@drawable/tmall_comment_item_bg" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ll_live_topicon" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/ll_live_topcomment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="" android:lines="1" android:maxEms="15"/>
+    </LinearLayout>
+    <ListView android:id="@+id/ll_live_comment" android:focusable="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_4" android:divider="@null" android:dividerHeight="@dimen/dp_4" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/voice_chat_prompt_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_72">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tvmall_comment" android:background="@drawable/ytm_tvmall_comment_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_tvmall_micro" android:background="@drawable/ytm_tvmaill_micro" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_72"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_24">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_tvmall_comment" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="" android:maxLines="2" android:lineSpacingExtra="@dimen/dp_4"/>
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_tvmall_comment_success" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="评论发送成功!" android:lineSpacingExtra="@dimen/dp_4"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/voice_chat_prompt" android:layout_width="@dimen/dp_414" android:layout_height="@dimen/dp_72" android:src="@drawable/ytm_voice_chat_prompt"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="true" android:drawable="@drawable/tvbuy_left_item_focus"/>
+    <item android:state_selected="true" android:drawable="@color/transparent"/>
+    <item android:drawable="@color/transparent"/>
+</selector>

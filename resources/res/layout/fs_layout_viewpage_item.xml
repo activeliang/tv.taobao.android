@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.flashsale.view.ArrowBarView android:layout_gravity="left" android:id="@+id/action_bar_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.flashsale.view.TitlebarView android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="@dimen/dp_100"/>
+        <com.yunos.tvtaobao.flashsale.view.ContentContainerView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_5" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.yunos.tvtaobao.flashsale.view.ArrowBarView android:layout_gravity="right" android:id="@+id/action_bar_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</FrameLayout>

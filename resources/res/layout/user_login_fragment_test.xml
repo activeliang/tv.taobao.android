@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:id="@+id/aliuser_webview_container" android:background="#e0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@+id/vp_qr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_qr"/>
+    <com.yunos.tvtaobao.payment.view.CustomNQRView android:id="@+id/nqrview" android:visibility="invisible" android:layout_width="300px" android:layout_height="300px"/>
+    <com.yunos.tvtaobao.payment.view.CustomSMSVerificationView android:id="@+id/custom_sms_verification_view" android:background="#e6000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

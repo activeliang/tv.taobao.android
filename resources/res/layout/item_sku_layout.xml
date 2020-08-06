@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/item_sku_layout" android:layout_width="708dp" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.biz.widget.newsku.widget.SkuItem android:gravity="center_vertical" android:id="@+id/sku_item_1" android:focusable="false" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.yunos.tvtaobao.biz.widget.newsku.widget.SkuItem android:gravity="center_vertical" android:id="@+id/sku_item_2" android:focusable="false" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_f2" android:layout_weight="1"/>
+    <com.yunos.tvtaobao.biz.widget.newsku.widget.SkuItem android:gravity="center_vertical" android:id="@+id/sku_item_3" android:focusable="false" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_f2" android:layout_weight="1"/>
+</LinearLayout>

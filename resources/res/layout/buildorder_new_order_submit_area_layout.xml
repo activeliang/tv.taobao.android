@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tvtaobao.android.buildorderwares.styled_a.LGSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/lgs_linearlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tvtaobao.android.buildorderwares.styled_a.LGBFrameLayout android:id="@+id/lgb_framelayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout android:id="@+id/constraint_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tvtaobao.android.buildorderwares.styled_a.NFITextView android:textSize="@dimen/values_dp_32" android:id="@+id/btn_txt" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </android.support.constraint.ConstraintLayout>
+    </com.tvtaobao.android.buildorderwares.styled_a.LGBFrameLayout>
+</com.tvtaobao.android.buildorderwares.styled_a.LGSLinearLayout>

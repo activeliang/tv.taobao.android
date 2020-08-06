@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:layout_marginRight="@dimen/dp_3">
+    <RelativeLayout android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_findsame_basic" android:focusable="false" android:layout_width="@dimen/dp_142" android:layout_height="@dimen/dp_142" android:src="@drawable/new_shop_cart_img_default" android:scaleType="fitCenter" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@+id/iv_findsame_basic">
+            <TextView android:textSize="@dimen/sp_26" android:textColor="@color/text_color_white" android:id="@+id/tv_findsame_des" android:focusable="false" android:layout_width="@dimen/dp_504" android:layout_height="wrap_content" android:text="短袖蕾丝娃娃领雪纺针织衫女装春季新款小可爱织衫女装春季新款" android:lineSpacingExtra="8sp"/>
+            <TextView android:textSize="@dimen/sp_32" android:textColor="#ff3300" android:id="@+id/tv_findsame_price" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥218" android:lineSpacingExtra="0sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_12">
+        <View android:background="@color/ytsdk_detail_not_buysupport_price_color" android:layout_width="0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/sp_32" android:textColor="@color/text_color_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_25" android:text="@string/new_shop_cart_activity_findsame" android:drawableLeft="@drawable/new_shop_cart_feature_findsame" android:drawablePadding="@dimen/dp_16"/>
+        <View android:background="@color/ytsdk_detail_not_buysupport_price_color" android:layout_width="0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.live.view.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_item_top" android:background="@drawable/ytm_shop_first_focus" android:paddingLeft="@dimen/dp_24" android:paddingRight="@dimen/dp_24" android:focusable="true" android:nextFocusLeft="@null" android:layout_width="@dimen/dp_392" android:layout_height="@dimen/dp_116" android:baselineAligned="false">
+    <RelativeLayout android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_112" android:layout_marginTop="@dimen/dp_2">
+        <ImageView android:id="@+id/iv_live_icon" android:background="#ffffff" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:layout_marginLeft="@dimen/dp_8" android:layout_marginTop="@dimen/dp_12" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/item_live_product_num" android:background="@drawable/tbao_live_shop_num_unfocus" android:paddingLeft="@dimen/dp_8" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_32"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="@dimen/dp_100" android:layout_marginLeft="@dimen/dp_8" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp_22" android:textColor="#99aabb" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_live_name" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:lines="1" android:maxEms="15"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_below="@+id/tv_live_name" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tv_live_price" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_40" android:lines="1" android:layout_alignParentBottom="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_live_cart" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/dp_88" android:layout_height="@dimen/dp_40" android:scaleType="fitEnd" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.live.view.FocusLinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/cytz_add_tip_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_320" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="@dimen/sp_26" android:textColor="@color/cytz_white" android:id="@+id/tv_pop_add_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_32" android:text="亲！该宝贝已被抢光了！" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

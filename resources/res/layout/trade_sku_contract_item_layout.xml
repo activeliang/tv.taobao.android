@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/sku_prop_item_name" android:focusable="false" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_67" android:lines="1"/>
+    <RelativeLayout android:id="@+id/sku_prop_item_layout" android:background="@drawable/ytm_sku_select_bar" android:layout_width="@dimen/dp_450" android:layout_height="@dimen/dp_67" android:layout_marginLeft="@dimen/dp_120">
+        <com.yunos.tvtaobao.biz.widget.SkuView android:id="@+id/sku_prop_item_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:background="@drawable/ytm_sku_prop_mask_left" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        <ImageView android:background="@drawable/ytm_sku_prop_mask_right" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

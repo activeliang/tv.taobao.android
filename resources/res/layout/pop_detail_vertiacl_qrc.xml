@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/tv_taobao_resize_layout" android:focusable="false" android:layout_width="@dimen/dp_520" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_92" android:layout_marginTop="@dimen/dp_108">
+            <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="700"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="100">
+                <ImageView android:id="@+id/iv_detail_pop_taobao" android:background="@drawable/tvtao_saoma_taobao" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60"/>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/colorff5500" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="【手机淘宝】" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="100">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_detail_pop_tmall" android:background="@drawable/tvtao_saoma_tianmao" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60"/>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/colorff5500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text=" 【天猫】 " android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="100">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_detail_pop_alipay" android:background="@drawable/tvtao_saoma_zhifubao" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60"/>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color55bbff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text=" 【支付宝】 " android:lines="1"/>
+            </LinearLayout>
+            <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="700"/>
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="@dimen/dp_12"/>
+        <TextView android:textSize="@dimen/sp_22" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:text="@string/sku_qrcode_tip"/>
+        <Space android:layout_width="1dp" android:layout_height="@dimen/dp_12"/>
+        <com.yunos.tvtaobao.zhuanti.tvbuy.widget.SquareImage android:layout_gravity="center_horizontal" android:id="@+id/iv_qrcode_view" android:background="@drawable/tvtao_resize_bitmap" android:padding="@dimen/dp_1" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" android:layout_margin="@dimen/dp_5"/>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/coloraabbcc" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/txt_kefu_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/values_dp_109" android:text="@string/tvtao_customer_service_telephone"/>
+    </LinearLayout>
+</FrameLayout>

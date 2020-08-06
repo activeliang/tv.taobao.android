@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/jhs_root_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_page_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.tvtaobao.android.recyclerviews.TvRecyclerViewB android:id="@+id/jhs_floor_recycler" android:paddingLeft="@dimen/dp_40" android:paddingTop="@dimen/dp_216" android:paddingBottom="@dimen/dp_60" android:layout_width="@dimen/dp_216" android:layout_height="match_parent" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.tvtaobao.android.recyclerviews.TvRecyclerViewB android:id="@+id/jhs_container_recycler" android:background="@color/transparent" android:paddingLeft="@dimen/dp_28" android:paddingRight="@dimen/dp_76" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintLeft_toRightOf="@+id/jhs_floor_recycler" app:layout_constraintRight_toRightOf="0"/>
+</android.support.constraint.ConstraintLayout>

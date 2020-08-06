@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/dp_6"/>
+            <stroke android:width="@dimen/dp_2" android:color="@color/tvtao_transparent"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+        <shape>
+            <corners android:radius="@dimen/dp_4"/>
+            <stroke android:width="@dimen/dp_2" android:color="#99bbdd"/>
+        </shape>
+    </item>
+</layer-list>

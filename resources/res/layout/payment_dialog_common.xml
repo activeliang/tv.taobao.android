@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#e60e1215" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/shape_logout_bg" android:focusable="false" android:layout_width="@dimen/dp_524" android:layout_height="@dimen/dp_260" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/dp_34" android:textColor="#202020" android:gravity="center" android:id="@+id/message" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_190" android:text="是否登出当前账号？" android:lineSpacingExtra="@dimen/dp_20"/>
+        <TextView android:background="#a0a0a0" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_190"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/foot" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/dp_30" android:textColor="@color/color_dialogbutton_text" android:gravity="center" android:id="@+id/positive" android:background="@drawable/button_logout_focusd" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="确认" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dp_30" android:textColor="@color/color_dialogbutton_text" android:gravity="center" android:id="@+id/negative" android:background="@drawable/button_not_logout_focusd" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

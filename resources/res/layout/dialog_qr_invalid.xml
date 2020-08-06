@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_qr_invalid" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_160">
+        <TextView android:textSize="30sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二维码已失效" android:lineSpacingExtra="20sp"/>
+        <TextView android:textSize="30sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请重新扫码 " android:layout_below="@+id/tv" android:lineSpacingExtra="20sp"/>
+    </LinearLayout>
+</RelativeLayout>

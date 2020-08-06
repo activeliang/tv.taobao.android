@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.biz.widget.TvRecyclerView android:id="@+id/recyclerview_findsame" android:paddingLeft="@dimen/dp_57" android:paddingTop="@dimen/dp_40" android:paddingRight="@dimen/dp_57" android:paddingBottom="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/bg_voice_card_mark" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_450" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginBottom="@dimen/dp_164" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_48" android:layout_marginLeft="@dimen/dp_60" android:src="@drawable/head_tao"/>
+        <com.tvtaobao.voicesdk.view.AutoTextView android:id="@+id/voice_card_search_reply" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:text="" android:layout_weight="1" app:textSize="@dimen/sp_22" app:textcolor="#ffffff" app:lines="1"/>
+    </LinearLayout>
+    <ImageView android:layout_width="@dimen/dp_1160" android:layout_height="@dimen/dp_164" android:src="@drawable/iv_dialog_novice_guide" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

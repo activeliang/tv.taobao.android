@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/dp_864" android:layout_height="match_parent" android:src="@drawable/live_list_cover"/>
+    <ImageView android:id="@+id/dl_live_unlist_prompt" android:visibility="gone" android:layout_width="@dimen/dp_328" android:layout_height="@dimen/dp_168" android:layout_marginLeft="@dimen/dp_8" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+    <com.yunos.tvtaobao.live.view.ZPListView android:id="@+id/dl_live_list" android:layout_width="@dimen/dp_384" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_8" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="@dimen/sp_20" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_104" android:layout_marginLeft="@dimen/dp_400" android:layout_marginBottom="@dimen/dp_24" android:text="[菜单键]展开/收起" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/super_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dialog_layout" android:background="@color/ytbv_dialog_layout_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_560" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/sp_40" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48"/>
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#848485" android:gravity="center_horizontal" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10"/>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/foot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48">
+                <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/positiveButton" style="@style/ytbv_alert_dialog_button"/>
+                <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/negativeButton" style="@style/ytbv_alert_dialog_button"/>
+            </LinearLayout>
+        </com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager>

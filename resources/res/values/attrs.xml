@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="alertDialogButtonGroupStyle" format="reference">
+    </attr>
+    <attr name="alertDialogCenterButtons" format="boolean">
+    </attr>
+    <attr name="alertDialogStyle" format="reference">
+    </attr>
+    <attr name="alertDialogTheme" format="reference">
+    </attr>
+    <attr name="alpha" format="float">
+    </attr>
+    <attr name="barrierAllowsGoneWidgets" format="boolean">
+    </attr>
+    <attr name="barrierDirection">
+        <enum name="bottom" value="3" />
+        <enum name="end" value="6" />
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="start" value="5" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="chainUseRtl" format="boolean">
+    </attr>
+    <attr name="constraintSet" format="reference">
+    </attr>
+    <attr name="constraint_referenced_ids" format="string">
+    </attr>
+    <attr name="content" format="reference">
+    </attr>
+    <attr name="customAbsSpinnerStyle" format="reference">
+    </attr>
+    <attr name="drawerArrowStyle" format="reference">
+    </attr>
+    <attr name="emptyVisibility">
+        <enum name="gone" value="0" />
+        <enum name="invisible" value="1" />
+    </attr>
+    <attr name="height" format="dimension">
+    </attr>
+    <attr name="isLightTheme" format="boolean">
+    </attr>
+    <attr name="isVertical" format="boolean">
+    </attr>
+    <attr name="layout_constrainedHeight" format="boolean">
+    </attr>
+    <attr name="layout_constrainedWidth" format="boolean">
+    </attr>
+    <attr name="layout_constraintBaseline_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintCircle" format="reference">
+    </attr>
+    <attr name="layout_constraintCircleAngle" format="integer">
+    </attr>
+    <attr name="layout_constraintCircleRadius" format="dimension">
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string">
+    </attr>
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension">
+    </attr>
+    <attr name="layout_constraintGuide_end" format="dimension">
+    </attr>
+    <attr name="layout_constraintGuide_percent" format="float">
+    </attr>
+    <attr name="layout_constraintHeight_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_percent" format="float">
+    </attr>
+    <attr name="layout_constraintHorizontal_bias" format="float">
+    </attr>
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float">
+    </attr>
+    <attr name="layout_constraintLeft_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float">
+    </attr>
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float">
+    </attr>
+    <attr name="layout_constraintWidth_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_percent" format="float">
+    </attr>
+    <attr name="layout_editor_absoluteX" format="dimension">
+    </attr>
+    <attr name="layout_editor_absoluteY" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginBottom" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginEnd" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginLeft" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginRight" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginStart" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginTop" format="dimension">
+    </attr>
+    <attr name="layout_optimizationLevel">
+        <flag name="barrier" value="2" />
+        <flag name="chains" value="4" />
+        <flag name="dimensions" value="8" />
+        <flag name="direct" value="1" />
+        <flag name="groups" value="32" />
+        <flag name="none" value="0" />
+        <flag name="standard" value="7" />
+    </attr>
+    <attr name="screenType">
+        <enum name="full" value="3" />
+        <enum name="horizontal" value="2" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="scrollMode">
+        <enum name="followScroll" value="1" />
+        <enum name="normalScroll" value="0" />
+    </attr>
+    <attr name="title" format="string">
+    </attr>
+    <attr name="navigationMode">
+        <enum name="listMode" value="1" />
+        <enum name="normal" value="0" />
+        <enum name="tabMode" value="2" />
+    </attr>
+    <attr name="displayOptions">
+        <flag name="none" value="0" />
+        <flag name="disableHome" value="20" />
+        <flag name="homeAsUp" value="4" />
+        <flag name="showCustom" value="10" />
+        <flag name="showHome" value="2" />
+        <flag name="showTitle" value="8" />
+        <flag name="useLogo" value="1" />
+    </attr>
+    <attr name="subtitle" format="string">
+    </attr>
+    <attr name="titleTextStyle" format="reference">
+    </attr>
+    <attr name="subtitleTextStyle" format="reference">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="logo" format="reference">
+    </attr>
+    <attr name="divider" format="reference">
+    </attr>
+    <attr name="background" format="reference">
+    </attr>
+    <attr name="backgroundStacked" format="reference|color">
+    </attr>
+    <attr name="backgroundSplit" format="reference|color">
+    </attr>
+    <attr name="customNavigationLayout" format="reference">
+    </attr>
+    <attr name="homeLayout" format="reference">
+    </attr>
+    <attr name="progressBarStyle" format="reference">
+    </attr>
+    <attr name="indeterminateProgressStyle" format="reference">
+    </attr>
+    <attr name="progressBarPadding" format="dimension">
+    </attr>
+    <attr name="itemPadding" format="dimension">
+    </attr>
+    <attr name="hideOnContentScroll" format="boolean">
+    </attr>
+    <attr name="contentInsetStart" format="dimension">
+    </attr>
+    <attr name="contentInsetEnd" format="dimension">
+    </attr>
+    <attr name="contentInsetLeft" format="dimension">
+    </attr>
+    <attr name="contentInsetRight" format="dimension">
+    </attr>
+    <attr name="contentInsetStartWithNavigation" format="dimension">
+    </attr>
+    <attr name="contentInsetEndWithActions" format="dimension">
+    </attr>
+    <attr name="elevation" format="dimension">
+    </attr>
+    <attr name="popupTheme" format="reference">
+    </attr>
+    <attr name="closeItemLayout" format="reference">
+    </attr>
+    <attr name="initialActivityCount" format="string">
+    </attr>
+    <attr name="expandActivityOverflowButtonDrawable" format="reference">
+    </attr>
+    <attr name="buttonPanelSideLayout" format="reference">
+    </attr>
+    <attr name="listLayout" format="reference">
+    </attr>
+    <attr name="multiChoiceItemLayout" format="reference">
+    </attr>
+    <attr name="singleChoiceItemLayout" format="reference">
+    </attr>
+    <attr name="listItemLayout" format="reference">
+    </attr>
+    <attr name="showTitle" format="boolean">
+    </attr>
+    <attr name="scTextColor" format="reference|color">
+    </attr>
+    <attr name="scTextCount" format="integer">
+    </attr>
+    <attr name="scTextSize" format="reference|dimension">
+    </attr>
+    <attr name="scDividerWidth" format="reference|dimension">
+    </attr>
+    <attr name="scTextFont" format="reference|string">
+    </attr>
+    <attr name="scUnderLineColor" format="reference|color">
+    </attr>
+    <attr name="scNextUnderLineColor" format="reference|color">
+    </attr>
+    <attr name="scUnderLineStrokeWidth" format="reference|dimension">
+    </attr>
+    <attr name="srcCompat" format="reference">
+    </attr>
+    <attr name="tickMark" format="reference">
+    </attr>
+    <attr name="tickMarkTint" format="color">
+    </attr>
+    <attr name="tickMarkTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="textAllCaps" format="reference|boolean">
+    </attr>
+    <attr name="windowActionBar" format="boolean">
+    </attr>
+    <attr name="windowNoTitle" format="boolean">
+    </attr>
+    <attr name="windowActionBarOverlay" format="boolean">
+    </attr>
+    <attr name="windowActionModeOverlay" format="boolean">
+    </attr>
+    <attr name="windowFixedWidthMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedHeightMinor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedWidthMinor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedHeightMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowMinWidthMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowMinWidthMinor" format="dimension|fraction">
+    </attr>
+    <attr name="actionBarTabStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabTextStyle" format="reference">
+    </attr>
+    <attr name="actionOverflowButtonStyle" format="reference">
+    </attr>
+    <attr name="actionOverflowMenuStyle" format="reference">
+    </attr>
+    <attr name="actionBarPopupTheme" format="reference">
+    </attr>
+    <attr name="actionBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarSplitStyle" format="reference">
+    </attr>
+    <attr name="actionBarTheme" format="reference">
+    </attr>
+    <attr name="actionBarWidgetTheme" format="reference">
+    </attr>
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0" />
+    </attr>
+    <attr name="actionBarDivider" format="reference">
+    </attr>
+    <attr name="actionBarItemBackground" format="reference">
+    </attr>
+    <attr name="actionMenuTextAppearance" format="reference">
+    </attr>
+    <attr name="actionMenuTextColor" format="reference|color">
+    </attr>
+    <attr name="actionModeStyle" format="reference">
+    </attr>
+    <attr name="actionModeCloseButtonStyle" format="reference">
+    </attr>
+    <attr name="actionModeBackground" format="reference">
+    </attr>
+    <attr name="actionModeSplitBackground" format="reference">
+    </attr>
+    <attr name="actionModeCloseDrawable" format="reference">
+    </attr>
+    <attr name="actionModeCutDrawable" format="reference">
+    </attr>
+    <attr name="actionModeCopyDrawable" format="reference">
+    </attr>
+    <attr name="actionModePasteDrawable" format="reference">
+    </attr>
+    <attr name="actionModeSelectAllDrawable" format="reference">
+    </attr>
+    <attr name="actionModeShareDrawable" format="reference">
+    </attr>
+    <attr name="actionModeFindDrawable" format="reference">
+    </attr>
+    <attr name="actionModeWebSearchDrawable" format="reference">
+    </attr>
+    <attr name="actionModePopupWindowStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceLargePopupMenu" format="reference">
+    </attr>
+    <attr name="textAppearanceSmallPopupMenu" format="reference">
+    </attr>
+    <attr name="textAppearancePopupMenuHeader" format="reference">
+    </attr>
+    <attr name="dialogTheme" format="reference">
+    </attr>
+    <attr name="dialogPreferredPadding" format="dimension">
+    </attr>
+    <attr name="listDividerAlertDialog" format="reference">
+    </attr>
+    <attr name="actionDropDownStyle" format="reference">
+    </attr>
+    <attr name="dropdownListPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="spinnerDropDownItemStyle" format="reference">
+    </attr>
+    <attr name="homeAsUpIndicator" format="reference">
+    </attr>
+    <attr name="actionButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarStyle" format="reference">
+    </attr>
+    <attr name="buttonBarButtonStyle" format="reference">
+    </attr>
+    <attr name="selectableItemBackground" format="reference">
+    </attr>
+    <attr name="selectableItemBackgroundBorderless" format="reference">
+    </attr>
+    <attr name="borderlessButtonStyle" format="reference">
+    </attr>
+    <attr name="dividerVertical" format="reference">
+    </attr>
+    <attr name="dividerHorizontal" format="reference">
+    </attr>
+    <attr name="activityChooserViewStyle" format="reference">
+    </attr>
+    <attr name="toolbarStyle" format="reference">
+    </attr>
+    <attr name="toolbarNavigationButtonStyle" format="reference">
+    </attr>
+    <attr name="popupMenuStyle" format="reference">
+    </attr>
+    <attr name="popupWindowStyle" format="reference">
+    </attr>
+    <attr name="editTextColor" format="reference|color">
+    </attr>
+    <attr name="editTextBackground" format="reference">
+    </attr>
+    <attr name="imageButtonStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceSearchResultTitle" format="reference">
+    </attr>
+    <attr name="textAppearanceSearchResultSubtitle" format="reference">
+    </attr>
+    <attr name="textColorSearchUrl" format="reference|color">
+    </attr>
+    <attr name="searchViewStyle" format="reference">
+    </attr>
+    <attr name="listPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightSmall" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightLarge" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingLeft" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingRight" format="dimension">
+    </attr>
+    <attr name="dropDownListViewStyle" format="reference">
+    </attr>
+    <attr name="listPopupWindowStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceListItem" format="reference">
+    </attr>
+    <attr name="textAppearanceListItemSmall" format="reference">
+    </attr>
+    <attr name="panelBackground" format="reference">
+    </attr>
+    <attr name="panelMenuListWidth" format="dimension">
+    </attr>
+    <attr name="panelMenuListTheme" format="reference">
+    </attr>
+    <attr name="listChoiceBackgroundIndicator" format="reference">
+    </attr>
+    <attr name="colorPrimary" format="color">
+    </attr>
+    <attr name="colorPrimaryDark" format="color">
+    </attr>
+    <attr name="colorAccent" format="color">
+    </attr>
+    <attr name="colorControlNormal" format="color">
+    </attr>
+    <attr name="colorControlActivated" format="color">
+    </attr>
+    <attr name="colorControlHighlight" format="color">
+    </attr>
+    <attr name="colorButtonNormal" format="color">
+    </attr>
+    <attr name="colorSwitchThumbNormal" format="color">
+    </attr>
+    <attr name="controlBackground" format="reference">
+    </attr>
+    <attr name="colorBackgroundFloating" format="color">
+    </attr>
+    <attr name="textColorAlertDialogListItem" format="reference|color">
+    </attr>
+    <attr name="buttonBarPositiveButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarNegativeButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarNeutralButtonStyle" format="reference">
+    </attr>
+    <attr name="autoCompleteTextViewStyle" format="reference">
+    </attr>
+    <attr name="buttonStyle" format="reference">
+    </attr>
+    <attr name="buttonStyleSmall" format="reference">
+    </attr>
+    <attr name="checkboxStyle" format="reference">
+    </attr>
+    <attr name="checkedTextViewStyle" format="reference">
+    </attr>
+    <attr name="editTextStyle" format="reference">
+    </attr>
+    <attr name="radioButtonStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyleIndicator" format="reference">
+    </attr>
+    <attr name="ratingBarStyleSmall" format="reference">
+    </attr>
+    <attr name="seekBarStyle" format="reference">
+    </attr>
+    <attr name="spinnerStyle" format="reference">
+    </attr>
+    <attr name="switchStyle" format="reference">
+    </attr>
+    <attr name="listMenuViewStyle" format="reference">
+    </attr>
+    <attr name="borderWidth" format="dimension">
+    </attr>
+    <attr name="unprogresColor" format="color">
+    </attr>
+    <attr name="progressColor" format="color">
+    </attr>
+    <attr name="tickWidth" format="dimension">
+    </attr>
+    <attr name="tickDensity" format="integer">
+    </attr>
+    <attr name="bgShow" format="boolean">
+    </attr>
+    <attr name="radius" format="dimension">
+    </attr>
+    <attr name="arcbgColor" format="color">
+    </attr>
+    <attr name="degree" format="integer">
+    </attr>
+    <attr name="arcCapRound" format="boolean">
+    </attr>
+    <attr name="progressStyle">
+        <enum name="arc" value="0" />
+        <enum name="tick" value="1" />
+    </attr>
+    <attr name="pow_switch_fixed_item" format="integer">
+    </attr>
+    <attr name="pow_switch_touch_scroll" format="boolean">
+    </attr>
+    <attr name="pow_switch_fixed_edge" format="boolean">
+    </attr>
+    <attr name="pow_switch_period" format="integer">
+    </attr>
+    <attr name="pow_switch_animation_period" format="integer">
+    </attr>
+    <attr name="pow_switch_switch_orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="allowStacking" format="boolean">
+    </attr>
+    <attr name="cardBackgroundColor" format="color">
+    </attr>
+    <attr name="cardCornerRadius" format="dimension">
+    </attr>
+    <attr name="cardElevation" format="dimension">
+    </attr>
+    <attr name="cardMaxElevation" format="dimension">
+    </attr>
+    <attr name="cardUseCompatPadding" format="boolean">
+    </attr>
+    <attr name="cardPreventCornerOverlap" format="boolean">
+    </attr>
+    <attr name="contentPadding" format="dimension">
+    </attr>
+    <attr name="contentPaddingLeft" format="dimension">
+    </attr>
+    <attr name="contentPaddingRight" format="dimension">
+    </attr>
+    <attr name="contentPaddingTop" format="dimension">
+    </attr>
+    <attr name="contentPaddingBottom" format="dimension">
+    </attr>
+    <attr name="cv_radius" format="dimension">
+    </attr>
+    <attr name="backgroundColor" format="color">
+    </attr>
+    <attr name="buttonTint" format="color">
+    </attr>
+    <attr name="buttonTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="entries" format="reference">
+    </attr>
+    <attr name="color" format="color">
+    </attr>
+    <attr name="spinBars" format="boolean">
+    </attr>
+    <attr name="drawableSize" format="dimension">
+    </attr>
+    <attr name="gapBetweenBars" format="dimension">
+    </attr>
+    <attr name="arrowHeadLength" format="dimension">
+    </attr>
+    <attr name="arrowShaftLength" format="dimension">
+    </attr>
+    <attr name="barLength" format="dimension">
+    </attr>
+    <attr name="thickness" format="dimension">
+    </attr>
+    <attr name="shadeColor" format="color">
+    </attr>
+    <attr name="shadeTopHeight" format="dimension">
+    </attr>
+    <attr name="shadeBottomHeight" format="dimension">
+    </attr>
+    <attr name="specified_focus_id" format="reference">
+    </attr>
+    <attr name="borderview_drawable_res" format="reference">
+    </attr>
+    <attr name="borderview_height" format="dimension">
+    </attr>
+    <attr name="borderview_width" format="dimension">
+    </attr>
+    <attr name="auto_hide" format="boolean">
+    </attr>
+    <attr name="keyboardViewStyle" format="reference">
+    </attr>
+    <attr name="popupWidth" format="dimension">
+    </attr>
+    <attr name="popupHeight" format="dimension">
+    </attr>
+    <attr name="measureWithLargestChild" format="boolean">
+    </attr>
+    <attr name="showDividers">
+        <flag name="end" value="4" />
+        <flag name="none" value="0" />
+        <flag name="beginning" value="1" />
+        <flag name="middle" value="2" />
+    </attr>
+    <attr name="dividerPadding" format="dimension">
+    </attr>
+    <attr name="lineColor" format="color">
+    </attr>
+    <attr name="space" format="dimension">
+    </attr>
+    <attr name="offsetX" format="dimension">
+    </attr>
+    <attr name="offsetY" format="dimension">
+    </attr>
+    <attr name="lineWidth" format="dimension">
+    </attr>
+    <attr name="lpbRadius" format="dimension">
+    </attr>
+    <attr name="firstDrawIntervel" format="integer">
+    </attr>
+    <attr name="textGravity" format="integer">
+        <enum name="left" value="0" />
+        <enum name="right" value="2" />
+        <enum name="center" value="1" />
+    </attr>
+    <attr name="showAsAction">
+        <flag name="always" value="2" />
+        <flag name="collapseActionView" value="8" />
+        <flag name="ifRoom" value="1" />
+        <flag name="never" value="0" />
+        <flag name="withText" value="4" />
+    </attr>
+    <attr name="actionLayout" format="reference">
+    </attr>
+    <attr name="actionViewClass" format="string">
+    </attr>
+    <attr name="actionProviderClass" format="string">
+    </attr>
+    <attr name="preserveIconSpacing" format="boolean">
+    </attr>
+    <attr name="subMenuArrow" format="reference">
+    </attr>
+    <attr name="mtbPonitDaysTitle" format="string">
+    </attr>
+    <attr name="mtbPonitDaysImage" format="reference">
+    </attr>
+    <attr name="overlapAnchor" format="boolean">
+    </attr>
+    <attr name="state_above_anchor" format="boolean">
+    </attr>
+    <attr name="pow_switch_icon_on" format="reference">
+    </attr>
+    <attr name="pow_switch_icon_off" format="reference">
+    </attr>
+    <attr name="pow_switch_bac_on" format="reference">
+    </attr>
+    <attr name="pow_switch_bac_off" format="reference">
+    </attr>
+    <attr name="paddingBottomNoButtons" format="dimension">
+    </attr>
+    <attr name="paddingTopNoTitle" format="dimension">
+    </attr>
+    <attr name="layoutManager" format="string">
+    </attr>
+    <attr name="spanCount" format="integer">
+    </attr>
+    <attr name="reverseLayout" format="boolean">
+    </attr>
+    <attr name="stackFromEnd" format="boolean">
+    </attr>
+    <attr name="rotate_degrees" format="float">
+    </attr>
+    <attr name="roundWidth" format="dimension">
+    </attr>
+    <attr name="roundHeight" format="dimension">
+    </attr>
+    <attr name="corner_radius" format="dimension">
+    </attr>
+    <attr name="border_width" format="dimension">
+    </attr>
+    <attr name="border_color" format="color">
+    </attr>
+    <attr name="mutate_background" format="boolean">
+    </attr>
+    <attr name="oval" format="boolean">
+    </attr>
+    <attr name="riv_corner_radius" format="dimension">
+    </attr>
+    <attr name="riv_corner_radius_top_left" format="dimension">
+    </attr>
+    <attr name="riv_corner_radius_top_right" format="dimension">
+    </attr>
+    <attr name="riv_corner_radius_bottom_left" format="dimension">
+    </attr>
+    <attr name="riv_corner_radius_bottom_right" format="dimension">
+    </attr>
+    <attr name="riv_border_width" format="dimension">
+    </attr>
+    <attr name="riv_border_color" format="color">
+    </attr>
+    <attr name="riv_mutate_background" format="boolean">
+    </attr>
+    <attr name="riv_oval" format="boolean">
+    </attr>
+    <attr name="riv_tile_mode">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="riv_tile_mode_x">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="riv_tile_mode_y">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="layout" format="reference">
+    </attr>
+    <attr name="iconifiedByDefault" format="boolean">
+    </attr>
+    <attr name="queryHint" format="string">
+    </attr>
+    <attr name="defaultQueryHint" format="string">
+    </attr>
+    <attr name="closeIcon" format="reference">
+    </attr>
+    <attr name="goIcon" format="reference">
+    </attr>
+    <attr name="searchIcon" format="reference">
+    </attr>
+    <attr name="searchHintIcon" format="reference">
+    </attr>
+    <attr name="voiceIcon" format="reference">
+    </attr>
+    <attr name="commitIcon" format="reference">
+    </attr>
+    <attr name="suggestionRowLayout" format="reference">
+    </attr>
+    <attr name="queryBackground" format="reference">
+    </attr>
+    <attr name="submitBackground" format="reference">
+    </attr>
+    <attr name="pow_checked_drawable" format="reference">
+    </attr>
+    <attr name="pow_checked_bac" format="reference">
+    </attr>
+    <attr name="pow_checked_hei" format="dimension">
+    </attr>
+    <attr name="pow_fixed_item" format="integer">
+    </attr>
+    <attr name="pow_show_over_scroll" format="boolean">
+    </attr>
+    <attr name="fresh">
+        <enum name="BOTH" value="0" />
+        <enum name="ONLY_LOADINN" value="2" />
+        <enum name="ONLY_REFRESH" value="1" />
+        <enum name="SWIPE_NONE" value="3" />
+    </attr>
+    <attr name="layout_expend" format="boolean">
+    </attr>
+    <attr name="fresh_model">
+        <enum name="BOTH" value="0" />
+        <enum name="ONLY_LOADINN" value="2" />
+        <enum name="ONLY_REFRESH" value="1" />
+        <enum name="SWIPE_NONE" value="3" />
+    </attr>
+    <attr name="thumbTint" format="color">
+    </attr>
+    <attr name="thumbTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="track" format="reference">
+    </attr>
+    <attr name="trackTint" format="color">
+    </attr>
+    <attr name="trackTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="thumbTextPadding" format="dimension">
+    </attr>
+    <attr name="switchTextAppearance" format="reference">
+    </attr>
+    <attr name="switchMinWidth" format="dimension">
+    </attr>
+    <attr name="switchPadding" format="dimension">
+    </attr>
+    <attr name="splitTrack" format="boolean">
+    </attr>
+    <attr name="showText" format="boolean">
+    </attr>
+    <attr name="borderColor" format="color">
+    </attr>
+    <attr name="titleTextAppearance" format="reference">
+    </attr>
+    <attr name="subtitleTextAppearance" format="reference">
+    </attr>
+    <attr name="titleMargin" format="dimension">
+    </attr>
+    <attr name="titleMarginStart" format="dimension">
+    </attr>
+    <attr name="titleMarginEnd" format="dimension">
+    </attr>
+    <attr name="titleMarginTop" format="dimension">
+    </attr>
+    <attr name="titleMarginBottom" format="dimension">
+    </attr>
+    <attr name="titleMargins" format="dimension">
+    </attr>
+    <attr name="maxButtonHeight" format="dimension">
+    </attr>
+    <attr name="buttonGravity">
+        <flag name="bottom" value="50" />
+        <flag name="top" value="30" />
+    </attr>
+    <attr name="collapseIcon" format="reference">
+    </attr>
+    <attr name="collapseContentDescription" format="string">
+    </attr>
+    <attr name="navigationIcon" format="reference">
+    </attr>
+    <attr name="navigationContentDescription" format="string">
+    </attr>
+    <attr name="logoDescription" format="string">
+    </attr>
+    <attr name="titleTextColor" format="color">
+    </attr>
+    <attr name="subtitleTextColor" format="color">
+    </attr>
+    <attr name="fullDark" format="reference|color">
+    </attr>
+    <attr name="topDark" format="reference|color">
+    </attr>
+    <attr name="centerDark" format="reference|color">
+    </attr>
+    <attr name="bottomDark" format="reference|color">
+    </attr>
+    <attr name="fullBright" format="reference|color">
+    </attr>
+    <attr name="topBright" format="reference|color">
+    </attr>
+    <attr name="centerBright" format="reference|color">
+    </attr>
+    <attr name="bottomBright" format="reference|color">
+    </attr>
+    <attr name="bottomMedium" format="reference|color">
+    </attr>
+    <attr name="centerMedium" format="reference|color">
+    </attr>
+    <attr name="progressLayout" format="reference">
+    </attr>
+    <attr name="horizontalProgressLayout" format="reference">
+    </attr>
+    <attr name="tv_layoutManager" format="string">
+    </attr>
+    <attr name="tv_numColumns" format="integer">
+    </attr>
+    <attr name="tv_numRows" format="integer">
+    </attr>
+    <attr name="tv_laneCountsStr" format="string">
+    </attr>
+    <attr name="tv_isIntelligentScroll" format="boolean">
+    </attr>
+    <attr name="tv_selectedItemOffsetStart" format="dimension">
+    </attr>
+    <attr name="tv_selectedItemOffsetEnd" format="dimension">
+    </attr>
+    <attr name="tv_selectedItemIsCentered" format="boolean">
+    </attr>
+    <attr name="tv_isMenu" format="boolean">
+    </attr>
+    <attr name="tv_isSelectFirstVisiblePosition" format="boolean">
+    </attr>
+    <attr name="tv_loadMoreBeforehandCount" format="integer">
+    </attr>
+    <attr name="tv_optimizeLayout" format="boolean">
+    </attr>
+    <attr name="focusDrawable" format="reference">
+    </attr>
+    <attr name="isAutoProcessFocus" format="boolean">
+    </attr>
+    <attr name="focusScale" format="float">
+    </attr>
+    <attr name="tv_verticalDivider" format="reference">
+    </attr>
+    <attr name="tv_horizontalDivider" format="reference">
+    </attr>
+    <attr name="tv_colSpan" format="integer">
+    </attr>
+    <attr name="tv_rowSpan" format="integer">
+    </attr>
+    <attr name="tv_span" format="integer">
+    </attr>
+    <attr name="minTextSize" format="dimension">
+    </attr>
+    <attr name="precision" format="float">
+    </attr>
+    <attr name="sizeToFit" format="boolean">
+    </attr>
+    <attr name="leftMargin" format="dimension">
+    </attr>
+    <attr name="topMargin" format="dimension">
+    </attr>
+    <attr name="rightMargin" format="dimension">
+    </attr>
+    <attr name="bottomMargin" format="dimension">
+    </attr>
+    <attr name="paddingStart" format="dimension">
+    </attr>
+    <attr name="paddingEnd" format="dimension">
+    </attr>
+    <attr name="theme" format="reference">
+    </attr>
+    <attr name="backgroundTint" format="color">
+    </attr>
+    <attr name="backgroundTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="textSize" format="dimension">
+    </attr>
+    <attr name="textcolor" format="color">
+    </attr>
+    <attr name="lines" format="integer">
+    </attr>
+    <attr name="gravity" format="integer">
+    </attr>
+    <attr name="buildorderwares_style_a_radius" format="dimension">
+    </attr>
+    <attr name="buildorderwares_style_a_gradient_from" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_gradient_to" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_invalid_color" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_strokeWidth" format="dimension">
+    </attr>
+    <attr name="buildorderwares_style_a_strokeColor" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_lgbFrameLayout_style">
+        <enum name="blank" value="0" />
+        <enum name="hGroupBgn" value="6" />
+        <enum name="hGroupEnd" value="8" />
+        <enum name="hGroupMid" value="7" />
+        <enum name="invalid" value="1" />
+        <enum name="single" value="2" />
+        <enum name="vGroupBgn" value="3" />
+        <enum name="vGroupEnd" value="5" />
+        <enum name="vGroupMid" value="4" />
+    </attr>
+    <attr name="buildorderwares_style_a_lgsLinearLayout_style">
+        <enum name="blank" value="0" />
+        <enum name="rect" value="2" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="buildorderwares_style_a_nfiTextView_normal_color" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_nfiTextView_focus_color" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_nfiTextView_invalid_color" format="color">
+    </attr>
+    <attr name="buildorderwares_style_a_nfiTextView_state">
+        <enum name="normal" value="0" />
+        <enum name="invalid" value="2" />
+        <enum name="focus" value="1" />
+    </attr>
+    <attr name="isNoBlur" format="boolean">
+    </attr>
+    <attr name="text" format="string">
+    </attr>
+    <attr name="textColor" format="reference">
+    </attr>
+    <attr name="mtbTitle" format="string">
+    </attr>
+    <attr name="mtbSubTitle" format="string">
+    </attr>
+    <attr name="mtbTitleSize" format="dimension">
+    </attr>
+    <attr name="mtbSubTitleSize" format="dimension">
+    </attr>
+    <attr name="mtbPicShowStatus" format="boolean">
+    </attr>
+    <attr name="mtbTitleMarginTop" format="dimension">
+    </attr>
+    <attr name="mtbTitleMarginLeft" format="dimension">
+    </attr>
+    <attr name="mtbSubTitleMarginTop" format="dimension">
+    </attr>
+    <attr name="mtbSubTitleMarginLeft" format="dimension">
+    </attr>
+    <attr name="mtbItemImage" format="reference">
+    </attr>
+    <attr name="mtbTitleTextcolor" format="color">
+    </attr>
+    <attr name="mtbSubTitleTextcolor" format="color">
+    </attr>
+    <attr name="loginverify_screenType">
+        <enum name="full" value="0" />
+        <enum name="horizontal" value="2" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewCountStyle">
+        <enum name="noX" value="1" />
+        <enum name="withX" value="0" />
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewCountValue" format="integer">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewCountColor" format="color">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewTxtSize" format="dimension">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewBtnSize" format="dimension">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewAddEnable" format="boolean">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewReduceEnable" format="boolean">
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewBtnStyle">
+        <enum name="inCartItem" value="1" />
+        <enum name="inGoodItem" value="0" />
+    </attr>
+    <attr name="takeoutwares_addAndReduceViewStyle">
+        <enum name="___" value="3" />
+        <enum name="__r" value="2" />
+        <enum name="_m_" value="4" />
+        <enum name="_mr" value="1" />
+        <enum name="lmr" value="0" />
+    </attr>
+    <attr name="takeoutwares_saleTipStyle">
+        <enum name="limitTip" value="0" />
+        <enum name="mainAndExtTip" value="1" />
+    </attr>
+    <attr name="ui3wares_aagl_columnGap" format="dimension">
+    </attr>
+    <attr name="ui3wares_aagl_rowGap" format="dimension">
+    </attr>
+    <attr name="ui3wares_aagl_columnNum" format="integer">
+    </attr>
+    <attr name="ui3wares_backgroundLevel" format="integer">
+    </attr>
+    <attr name="ui3wares_custome_textsize" format="boolean">
+    </attr>
+    <attr name="ui3wares_dbv_iconSrc" format="dimension">
+    </attr>
+    <attr name="ui3wares_dbv_iconWidth" format="dimension">
+    </attr>
+    <attr name="ui3wares_dbv_iconHeight" format="dimension">
+    </attr>
+    <attr name="ui3wares_dbv_iconAlpha" format="float">
+    </attr>
+    <attr name="ui3wares_evMajorText" format="string">
+    </attr>
+    <attr name="ui3wares_evMinorText" format="string">
+    </attr>
+    <attr name="ui3wares_errorSrc" format="integer">
+    </attr>
+    <attr name="ui3wares_backText" format="string">
+    </attr>
+    <attr name="ui3wares_backCountDown" format="integer">
+    </attr>
+    <attr name="ui3wares_infoNetwork" format="string">
+    </attr>
+    <attr name="ui3wares_type" format="integer">
+    </attr>
+    <attr name="ui3wares_networkErrorSrc" format="integer">
+    </attr>
+    <attr name="ui3wares_networkInfo" format="string">
+    </attr>
+    <attr name="ui3wares_networkButtonText" format="string">
+    </attr>
+    <attr name="ui3wares_ltRadius" format="dimension">
+    </attr>
+    <attr name="ui3wares_lbRadius" format="dimension">
+    </attr>
+    <attr name="ui3wares_rtRadius" format="dimension">
+    </attr>
+    <attr name="ui3wares_rbRadius" format="dimension">
+    </attr>
+    <attr name="ui3wares_radius" format="dimension">
+    </attr>
+    <attr name="ui3wares_ltArcW" format="dimension">
+    </attr>
+    <attr name="ui3wares_ltArcH" format="dimension">
+    </attr>
+    <attr name="ui3wares_lbArcW" format="dimension">
+    </attr>
+    <attr name="ui3wares_lbArcH" format="dimension">
+    </attr>
+    <attr name="ui3wares_rtArcW" format="dimension">
+    </attr>
+    <attr name="ui3wares_rtArcH" format="dimension">
+    </attr>
+    <attr name="ui3wares_rbArcW" format="dimension">
+    </attr>
+    <attr name="ui3wares_rbArcH" format="dimension">
+    </attr>
+    <attr name="ui3wares_strokeWidth" format="dimension">
+    </attr>
+    <attr name="ui3wares_strokeColor" format="color">
+    </attr>
+    <attr name="ui3wares_antiAlias" format="boolean">
+    </attr>
+    <attr name="ui3wares_degradeShow" format="boolean">
+    </attr>
+    <attr name="ui3wares_simpleCardViewRadius" format="dimension">
+    </attr>
+    <attr name="ui3wares_majorText" format="string">
+    </attr>
+    <attr name="ui3wares_majorTextSize" format="dimension">
+    </attr>
+    <attr name="ui3wares_majorTextColor" format="color">
+    </attr>
+    <attr name="ui3wares_minorText" format="string">
+    </attr>
+    <attr name="ui3wares_minorTextSize" format="dimension">
+    </attr>
+    <attr name="ui3wares_minorTextColor" format="color">
+    </attr>
+    <attr name="ui3wares_isTriangleBg" format="boolean">
+    </attr>
+    <attr name="mtTitle" format="string">
+    </attr>
+    <attr name="mtDetail" format="string">
+    </attr>
+    <attr name="mtImage" format="reference">
+    </attr>
+    <attr name="mtIsFirstHasFocus" format="boolean">
+    </attr>
+    <attr name="name" value="null_0">null</attr>
+    <attr name="name" value="null_1">null</attr>
+    <attr name="name" value="null_2">null</attr>
+    <attr name="name" value="null_3">null</attr>
+    <attr name="name" value="null_4">null</attr>
+    <attr name="name" value="null_5">null</attr>
+    <attr name="name" value="null_6">null</attr>
+    <attr name="name" value="null_7">null</attr>
+    <attr name="name" value="null_8">null</attr>
+    <attr name="name" value="null_9">null</attr>
+    <attr name="name" value="null_a">null</attr>
+    <attr name="name" value="null_b">null</attr>
+    <attr name="name" value="null_c">null</attr>
+    <attr name="name" value="null_d">null</attr>
+    <attr name="name" value="null_e">null</attr>
+    <attr name="name" value="null_f">null</attr>
+    <attr name="name" value="null_10">null</attr>
+    <attr name="name" value="null_11">null</attr>
+    <attr name="name" value="null_12">null</attr>
+    <attr name="name" value="null_13">null</attr>
+    <attr name="name" value="null_14">null</attr>
+    <attr name="name" value="null_15">null</attr>
+    <attr name="name" value="null_16">null</attr>
+    <attr name="name" value="null_17">null</attr>
+    <attr name="name" value="null_18">null</attr>
+    <attr name="name" value="null_19">null</attr>
+    <attr name="name" value="null_1a">null</attr>
+    <attr name="name" value="null_1b">null</attr>
+    <attr name="name" value="null_1c">null</attr>
+    <attr name="name" value="null_1d">null</attr>
+    <attr name="name" value="null_1e">null</attr>
+    <attr name="name" value="null_1f">null</attr>
+    <attr name="name" value="null_20">null</attr>
+    <attr name="name" value="null_21">null</attr>
+    <attr name="name" value="null_22">null</attr>
+    <attr name="name" value="null_23">null</attr>
+    <attr name="name" value="null_24">null</attr>
+    <attr name="name" value="null_25">null</attr>
+    <attr name="name" value="null_26">null</attr>
+    <attr name="name" value="null_27">null</attr>
+    <attr name="name" value="null_28">null</attr>
+    <attr name="name" value="null_29">null</attr>
+    <attr name="name" value="null_2a">null</attr>
+    <attr name="name" value="null_2b">null</attr>
+    <attr name="name" value="null_2c">null</attr>
+    <attr name="name" value="null_2d">null</attr>
+    <attr name="name" value="null_2e">null</attr>
+    <attr name="name" value="null_2f">null</attr>
+    <attr name="name" value="null_30">null</attr>
+    <attr name="name" value="null_31">null</attr>
+    <attr name="name" value="null_32">null</attr>
+    <attr name="name" value="null_33">null</attr>
+    <attr name="name" value="null_34">null</attr>
+    <attr name="name" value="null_35">null</attr>
+    <attr name="name" value="null_36">null</attr>
+    <attr name="name" value="null_37">null</attr>
+    <attr name="name" value="null_38">null</attr>
+    <attr name="name" value="null_39">null</attr>
+    <attr name="name" value="null_3a">null</attr>
+    <attr name="name" value="null_3b">null</attr>
+    <attr name="name" value="null_3c">null</attr>
+    <attr name="name" value="null_3d">null</attr>
+    <attr name="name" value="null_3e">null</attr>
+    <attr name="name" value="null_3f">null</attr>
+    <attr name="name" value="null_40">null</attr>
+    <attr name="name" value="null_41">null</attr>
+    <attr name="name" value="null_42">null</attr>
+    <attr name="name" value="null_43">null</attr>
+    <attr name="name" value="null_44">null</attr>
+    <attr name="name" value="null_45">null</attr>
+    <attr name="name" value="null_46">null</attr>
+    <attr name="name" value="null_47">null</attr>
+    <attr name="name" value="null_48">null</attr>
+    <attr name="name" value="null_49">null</attr>
+    <attr name="name" value="null_4a">null</attr>
+    <attr name="name" value="null_4b">null</attr>
+    <attr name="name" value="null_4c">null</attr>
+    <attr name="name" value="null_4d">null</attr>
+    <attr name="name" value="null_4e">null</attr>
+    <attr name="name" value="null_4f">null</attr>
+    <attr name="name" value="null_50">null</attr>
+    <attr name="name" value="null_51">null</attr>
+    <attr name="name" value="null_52">null</attr>
+    <attr name="name" value="null_53">null</attr>
+    <attr name="name" value="null_54">null</attr>
+    <attr name="name" value="null_55">null</attr>
+    <attr name="name" value="null_56">null</attr>
+    <attr name="name" value="null_57">null</attr>
+    <attr name="name" value="null_58">null</attr>
+    <attr name="name" value="null_59">null</attr>
+    <attr name="name" value="null_5a">null</attr>
+    <attr name="name" value="null_5b">null</attr>
+    <attr name="name" value="null_5c">null</attr>
+    <attr name="name" value="null_5d">null</attr>
+    <attr name="name" value="null_5e">null</attr>
+    <attr name="name" value="null_5f">null</attr>
+    <attr name="name" value="null_60">null</attr>
+    <attr name="name" value="null_61">null</attr>
+    <attr name="name" value="null_62">null</attr>
+    <attr name="name" value="null_63">null</attr>
+    <attr name="name" value="null_64">null</attr>
+    <attr name="name" value="null_65">null</attr>
+    <attr name="name" value="null_66">null</attr>
+    <attr name="name" value="null_67">null</attr>
+    <attr name="name" value="null_68">null</attr>
+    <attr name="name" value="null_69">null</attr>
+    <attr name="name" value="null_6a">null</attr>
+    <attr name="name" value="null_6b">null</attr>
+    <attr name="name" value="null_6c">null</attr>
+    <attr name="name" value="null_6d">null</attr>
+    <attr name="name" value="null_6e">null</attr>
+    <attr name="name" value="null_6f">null</attr>
+    <attr name="name" value="null_70">null</attr>
+    <attr name="name" value="null_71">null</attr>
+    <attr name="name" value="null_72">null</attr>
+    <attr name="name" value="null_73">null</attr>
+    <attr name="name" value="null_74">null</attr>
+    <attr name="name" value="null_75">null</attr>
+    <attr name="name" value="null_76">null</attr>
+    <attr name="name" value="null_77">null</attr>
+    <attr name="name" value="null_78">null</attr>
+    <attr name="name" value="null_79">null</attr>
+    <attr name="name" value="null_7a">null</attr>
+    <attr name="name" value="null_7b">null</attr>
+    <attr name="name" value="null_7c">null</attr>
+    <attr name="name" value="null_7d">null</attr>
+    <attr name="name" value="null_7e">null</attr>
+    <attr name="name" value="null_7f">null</attr>
+    <attr name="name" value="null_80">null</attr>
+    <attr name="name" value="null_81">null</attr>
+    <attr name="name" value="null_82">null</attr>
+    <attr name="name" value="null_83">null</attr>
+    <attr name="name" value="null_84">null</attr>
+    <attr name="name" value="null_85">null</attr>
+    <attr name="name" value="null_86">null</attr>
+    <attr name="name" value="null_87">null</attr>
+    <attr name="name" value="null_88">null</attr>
+    <attr name="name" value="null_89">null</attr>
+    <attr name="name" value="null_8a">null</attr>
+    <attr name="name" value="null_8b">null</attr>
+    <attr name="name" value="null_8c">null</attr>
+    <attr name="name" value="null_8d">null</attr>
+    <attr name="name" value="null_8e">null</attr>
+    <attr name="name" value="null_8f">null</attr>
+    <attr name="name" value="null_90">null</attr>
+    <attr name="name" value="null_91">null</attr>
+    <attr name="name" value="null_92">null</attr>
+    <attr name="name" value="null_93">null</attr>
+    <attr name="name" value="null_94">null</attr>
+    <attr name="name" value="null_95">null</attr>
+    <attr name="name" value="null_96">null</attr>
+    <attr name="name" value="null_97">null</attr>
+    <attr name="name" value="null_98">null</attr>
+    <attr name="name" value="null_99">null</attr>
+    <attr name="name" value="null_9a">null</attr>
+    <attr name="name" value="null_9b">null</attr>
+    <attr name="name" value="null_9c">null</attr>
+    <attr name="name" value="null_9d">null</attr>
+    <attr name="name" value="null_9e">null</attr>
+    <attr name="name" value="null_9f">null</attr>
+    <attr name="name" value="null_a0">null</attr>
+    <attr name="name" value="null_a1">null</attr>
+    <attr name="name" value="null_a2">null</attr>
+    <attr name="name" value="null_a3">null</attr>
+    <attr name="name" value="null_a4">null</attr>
+    <attr name="name" value="null_a5">null</attr>
+    <attr name="name" value="null_a6">null</attr>
+    <attr name="name" value="null_a7">null</attr>
+    <attr name="name" value="null_a8">null</attr>
+    <attr name="name" value="null_a9">null</attr>
+    <attr name="name" value="null_aa">null</attr>
+    <attr name="name" value="null_ab">null</attr>
+    <attr name="name" value="null_ac">null</attr>
+    <attr name="name" value="null_ad">null</attr>
+    <attr name="name" value="null_ae">null</attr>
+    <attr name="name" value="null_af">null</attr>
+    <attr name="name" value="null_b0">null</attr>
+    <attr name="name" value="null_b1">null</attr>
+    <attr name="name" value="null_b2">null</attr>
+    <attr name="name" value="null_b3">null</attr>
+    <attr name="name" value="null_b4">null</attr>
+    <attr name="name" value="null_b5">null</attr>
+    <attr name="name" value="null_b6">null</attr>
+    <attr name="name" value="null_b7">null</attr>
+    <attr name="name" value="null_b8">null</attr>
+    <attr name="name" value="null_b9">null</attr>
+    <attr name="name" value="null_ba">null</attr>
+    <attr name="name" value="null_bb">null</attr>
+    <attr name="name" value="null_bc">null</attr>
+    <attr name="name" value="null_bd">null</attr>
+    <attr name="name" value="null_be">null</attr>
+    <attr name="name" value="null_bf">null</attr>
+    <attr name="name" value="null_c0">null</attr>
+    <attr name="name" value="null_c1">null</attr>
+    <attr name="name" value="null_c2">null</attr>
+    <attr name="name" value="null_c3">null</attr>
+    <attr name="name" value="null_c4">null</attr>
+    <attr name="name" value="null_c5">null</attr>
+    <attr name="name" value="null_c6">null</attr>
+    <attr name="name" value="null_c7">null</attr>
+    <attr name="name" value="null_c8">null</attr>
+    <attr name="name" value="null_c9">null</attr>
+    <attr name="name" value="null_ca">null</attr>
+    <attr name="name" value="null_cb">null</attr>
+    <attr name="name" value="null_cc">null</attr>
+    <attr name="name" value="null_cd">null</attr>
+    <attr name="name" value="null_ce">null</attr>
+    <attr name="name" value="null_cf">null</attr>
+    <attr name="name" value="null_d0">null</attr>
+    <attr name="name" value="null_d1">null</attr>
+    <attr name="name" value="null_d2">null</attr>
+    <attr name="name" value="null_d3">null</attr>
+    <attr name="name" value="null_d4">null</attr>
+    <attr name="name" value="null_d5">null</attr>
+    <attr name="name" value="null_d6">null</attr>
+    <attr name="name" value="null_d7">null</attr>
+    <attr name="name" value="null_d8">null</attr>
+    <attr name="name" value="null_d9">null</attr>
+    <attr name="name" value="null_da">null</attr>
+    <attr name="name" value="null_db">null</attr>
+    <attr name="name" value="null_dc">null</attr>
+    <attr name="name" value="null_dd">null</attr>
+    <attr name="name" value="null_de">null</attr>
+    <attr name="name" value="null_df">null</attr>
+    <attr name="name" value="null_e0">null</attr>
+    <attr name="name" value="null_e1">null</attr>
+    <attr name="name" value="null_e2">null</attr>
+    <attr name="name" value="null_e3">null</attr>
+    <attr name="name" value="null_e4">null</attr>
+    <attr name="name" value="null_e5">null</attr>
+    <attr name="name" value="null_e6">null</attr>
+    <attr name="name" value="null_e7">null</attr>
+    <attr name="name" value="null_e8">null</attr>
+    <attr name="name" value="null_e9">null</attr>
+    <attr name="name" value="null_ea">null</attr>
+    <attr name="name" value="null_eb">null</attr>
+    <attr name="name" value="null_ec">null</attr>
+    <attr name="name" value="null_ed">null</attr>
+    <attr name="name" value="null_ee">null</attr>
+    <attr name="name" value="null_ef">null</attr>
+    <attr name="name" value="null_f0">null</attr>
+    <attr name="name" value="null_f1">null</attr>
+    <attr name="name" value="null_f2">null</attr>
+    <attr name="name" value="null_f3">null</attr>
+    <attr name="name" value="null_f4">null</attr>
+    <attr name="name" value="null_f5">null</attr>
+    <attr name="name" value="null_f6">null</attr>
+    <attr name="name" value="null_f7">null</attr>
+    <attr name="name" value="null_f8">null</attr>
+    <attr name="name" value="null_f9">null</attr>
+    <attr name="name" value="null_fa">null</attr>
+    <attr name="name" value="null_fb">null</attr>
+    <attr name="name" value="null_fc">null</attr>
+    <attr name="name" value="null_fd">null</attr>
+    <attr name="name" value="null_fe">null</attr>
+    <attr name="name" value="null_ff">null</attr>
+</resources>

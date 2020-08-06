@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/cytz_point_fail" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_133" android:layout_marginBottom="@dimen/dp_170" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="@dimen/dp_104" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_120" android:layout_marginTop="@dimen/dp_36">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/cytz_white_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="居然...\10被它跑掉了" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textColor="@color/cytz_white_text_color" android:gravity="center" android:id="@+id/tv_fail_next_time" android:layout_width="@dimen/dp_192" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_32" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

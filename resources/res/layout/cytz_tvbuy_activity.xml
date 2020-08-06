@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yunos.tv.tvsdk.media.view.VideoView android:id="@+id/videoview" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:background="#19000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loading_relativelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出错啦"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/tvbuy_bottom_progress" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dp_4" android:progressDrawable="@drawable/bottom_progress_bg" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <ImageView android:id="@+id/iv_stopEnterToPlay" android:visibility="invisible" android:layout_width="@dimen/dp_144" android:layout_height="@dimen/dp_144" android:layout_marginLeft="@dimen/dp_568" android:layout_marginTop="@dimen/dp_288" android:src="@drawable/home_play" android:layout_centerInParent="true"/>
+    <com.yunos.tvtaobao.zhuanti.view.MyProgressbarRelativeLayout android:id="@+id/myProgressbarRelativelayout" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@+id/txt_video_tips" android:background="@drawable/bg_tvbuy_video_tips" android:paddingLeft="@dimen/dp_48" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_48" android:paddingBottom="@dimen/dp_12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_32" android:text="上下键切换，向左呼出播放列表，向右呼出相关商品" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

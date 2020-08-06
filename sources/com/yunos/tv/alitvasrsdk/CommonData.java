@@ -1,0 +1,45 @@
+package com.yunos.tv.alitvasrsdk;
+
+public class CommonData {
+    public static final String ASR_CLIENT_ACTION = "com.yunos.tv.alitvasr.client";
+    public static final String ASR_SERVER_ACTION = "com.yunos.tv.alitvasr.service";
+    public static final String ASR_SERVER_INNER_ACTION = "com.yunos.tv.alitvasr.inner.service";
+    public static String ASR_UI_PACKAGE_NAME = "com.yunos.tv.alitvasr";
+    public static final int CID_ASSISTANT_RECEIVE = Integer.MAX_VALUE;
+    public static final int CLIENT_OFFLINE = 0;
+    public static final int CLIENT_ONLINE = 1;
+    public static final String COMMAND = "command";
+    public static final String COMMAND_START = "cmd_start";
+    public static final String COMMAND_STOP = "cmd_stop";
+    public static final String COMMAND_STREAM = "cmd_stream";
+    public static final String COMMAND_VOLUME = "cmd_volume";
+    public static final int DEVICE_TYPE_ASSISTANT = 1;
+    public static final int DEVICE_TYPE_FAR_DEVICE = 4;
+    public static final int DEVICE_TYPE_REMOTE_CONTROL = 0;
+    public static final int IBinder_IAliTVASR = 0;
+    public static final int IBinder_IINPUT = 2;
+    public static final int IBinder_ISendData = 1;
+    public static final int ID_IS_FOREGROUND = 10001;
+    public static final int ID_MIN = 10001;
+    public static final int ID_ON_NLU_RESULT = 10002;
+    public static final String KEY_ACTION = "action";
+    public static final String KEY_ACTION_TYPE = "actionType";
+    public static final String KEY_CLASS_NAME = "className";
+    public static final String KEY_DATA = "data";
+    public static final String KEY_FINISHED = "finish";
+    public static final String KEY_INTERESTED = "interested";
+    public static final String KEY_IS_FOREGROUND = "is_foreground";
+    public static final String KEY_KEYCODE = "keyCode";
+    public static final String KEY_PACKAGE_NAME = "packageName";
+    public static final String KEY_QUESTION = "question";
+    public static final String KEY_RET = "ret";
+    public static final String KEY_SIZE = "size";
+    public static final String KEY_STATUS = "status";
+    public static final String KEY_VOLUME = "volume";
+    public static final int MIC_STATUS_START = 1;
+    public static final int MIC_STATUS_STOP = 2;
+    public static final String PARAM = "param";
+    public static final String TAG = "AliTVASRSdk";
+    public static final String TYPE = "type";
+    public static final String TYPE_ASR = "asr";
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/dp_192" android:layout_height="@dimen/dp_382" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_27" android:layout_marginRight="@dimen/dp_4">
+    <ImageView android:id="@+id/iv_focus_status" android:background="@drawable/item_select" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:background="@drawable/shape_corner_item_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_4">
+        <com.tvtaobao.android.ui3.widget.RoundImageView android:id="@+id/item_product_pic" android:layout_width="match_parent" android:layout_height="@dimen/dp_184" android:scaleType="fitXY" app:ui3wares_ltRadius="@dimen/dp_6" app:ui3wares_rtRadius="@dimen/dp_6"/>
+        <ImageView android:id="@+id/item_product_tag_num" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/item_tag_num_1" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="@dimen/dp_190" android:layout_below="@+id/item_product_pic">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#222222" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/item_product_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="春潮新款韩版休鲁花花生油..." android:lines="2" android:includeFontPadding="false" android:lineSpacingExtra="0dp"/>
+            <TextView android:textSize="@dimen/sp_24" android:textColor="#ff3300" android:gravity="center_vertical" android:id="@+id/item_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_f4" android:text="￥180.99" android:singleLine="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_product_rebate_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_16">
+                <ImageView android:id="@+id/img_rebate_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" android:maxHeight="@dimen/dp_16"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="#ff3300" android:id="@+id/item_product_rebate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_f2" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@+id/item_product_sold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="22180人付款" android:singleLine="true" android:includeFontPadding="false" android:lineSpacingExtra="0dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_6">
+                <ImageView android:id="@+id/item_tag_exempt_postage" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:src="@drawable/tag_postage"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6">
+                <ImageView android:id="@+id/item_product_tag_quick" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_8" android:src="@drawable/tag_quick" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/item_tag_already_buy" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:src="@drawable/tag_dialog_already_buy"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

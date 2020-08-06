@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.newcart.view.ShopCartHintFocusLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="@dimen/dp_60" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_16" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_shop_info" android:layout_width="@dimen/dp_880" android:layout_height="@dimen/dp_52">
+        <View android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <Space android:id="@+id/space" android:layout_width="@dimen/dp_20" android:layout_height="1dp"/>
+        <ImageView android:id="@+id/img_shop_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_4" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_toRightOf="@+id/space" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#202020" android:id="@+id/tv_shopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/img_shop_type" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/layout_valid_shop" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_shopname" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_320" android:layout_height="match_parent" android:layout_toLeftOf="@+id/layout_into_shop">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#202020" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_shop_activities" android:paddingRight="@dimen/dp_16" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1"/>
+                <View android:background="#dadcdf" android:layout_width="1px" android:layout_height="@dimen/dp_36"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_into_shop" android:focusable="false" android:layout_width="@dimen/dp_80" android:layout_height="match_parent" android:layout_toLeftOf="@+id/layout_get_coupon">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#202020" android:gravity="center" android:id="@+id/tv_into_shop" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="进店" android:layout_weight="1"/>
+                <View android:background="#dadcdf" android:layout_width="1px" android:layout_height="@dimen/dp_36"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_get_coupon" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/dp_80" android:layout_height="match_parent" android:layout_toLeftOf="@+id/img_select_button">
+                <TextView android:textSize="@dimen/dp_20" android:textColor="#202020" android:gravity="center" android:id="@+id/tv_get_coupon" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="领券" android:layout_weight="1"/>
+                <View android:background="#dadcdf" android:layout_width="1px" android:layout_height="@dimen/dp_36"/>
+            </LinearLayout>
+            <com.yunos.tvtaobao.newcart.view.NewShopCartShopSelectView android:id="@+id/img_select_button" android:focusable="true" android:layout_width="@dimen/dp_80" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_delete_invalid_goods" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <View android:background="#dadcdf" android:layout_width="1px" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_20" android:textColor="@color/new_cart_black" android:gravity="center" android:id="@+id/tv_delete_invalid_goods" android:background="@drawable/bg_delete_invalid" android:focusable="true" android:layout_width="@dimen/dp_168" android:layout_height="match_parent" android:text="删除已失效宝贝"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.yunos.tvtaobao.newcart.view.ShopCartHintFocusLayout>

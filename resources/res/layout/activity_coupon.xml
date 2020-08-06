@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/new_cart_e60e1215" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_head" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_61" android:src="@drawable/coupon_top_title_icon"/>
+    <com.yunos.tvtaobao.detailbundle.view.TvRecyclerView android:id="@+id/rv_coupon" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_62" android:layout_below="@+id/iv_head"/>
+    <TextView android:textSize="32sp" android:textColor="#ffffff" android:id="@+id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_detail_taobao_coupon_num_null" android:layout_centerInParent="true"/>
+</RelativeLayout>

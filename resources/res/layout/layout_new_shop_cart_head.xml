@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.widget.InnerFocusLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="@dimen/dp_60" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_96">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20">
+        <TextView android:textSize="@dimen/dp_36" android:textColor="#ffffff" android:id="@+id/shop_cart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物车（22）" android:layout_centerVertical="true" android:lineSpacingExtra="0sp"/>
+        <com.yunos.tvtaobao.newcart.view.NoScaleFocusImageView android:id="@+id/shop_cart_icon" android:focusable="true" android:layout_width="@dimen/dp_660" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_1" android:scaleType="fitXY" android:layout_toRightOf="@+id/shop_cart_title" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.yunos.tvtaobao.biz.widget.InnerFocusLayout>

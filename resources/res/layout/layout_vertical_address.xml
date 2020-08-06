@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager android:id="@+id/focusmanage" android:background="@drawable/cateroy_recycle_view_bg" android:layout_width="@dimen/dp_400" android:layout_height="match_parent">
+        <View android:id="@+id/view_taobao" android:background="@drawable/tvtao_icon_v_normal_logo" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_16"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_address_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_48" android:layout_marginRight="@dimen/dp_16">
+            <ImageView android:id="@+id/img_item_icon" android:background="#ffffff" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60"/>
+            <com.yunos.tvtaobao.zhuanti.tvbuy.widget.AutoSplitTextView android:textSize="@dimen/dp_24" android:textColor="@color/colorWhite" android:ellipsize="end" android:gravity="top" android:id="@+id/text_item_title" android:background="@color/alibc_transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_8" android:maxLines="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/labelContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_140" android:layout_marginRight="@dimen/dp_16">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_number" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_itemprice" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_tax" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_balance" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_discount" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:id="@+id/label_delivery" android:layout_width="match_parent" android:layout_height="@dimen/dp_36"/>
+            <View android:background="#7498badc" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_12"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <TextView android:textSize="@dimen/dp_22" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计: "/>
+                <TextView android:textSize="@dimen/dp_28" android:textColor="#ff5500" android:id="@+id/label_orderprice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="¥175.22"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/ll_address_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_244">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_18" android:src="@drawable/tvtao_icon_location"/>
+            <TextView android:textSize="@dimen/dp_18" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="收货地址"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/addressWrapper" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_148" android:layout_marginBottom="@dimen/dp_92">
+            <com.yunos.tvtaobao.tvsdk.widget.focus.FocusGallery android:id="@+id/address_gallery" android:background="@drawable/tvtao_bg_sku_button_address_diff" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/address_toggle" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_52" android:layout_height="@dimen/dp_52" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/tvtao_v_address_toggle"/>
+        </FrameLayout>
+        <com.yunos.tvtaobao.zhuanti.tvbuy.widget.FocusLayout android:layout_gravity="bottom" android:id="@+id/ll_buy_button" android:background="@drawable/tvtao_bg_sku_button_diff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16">
+            <TextView android:textSize="@dimen/dp_26" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_pay" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:text="付款"/>
+        </com.yunos.tvtaobao.zhuanti.tvbuy.widget.FocusLayout>
+    </com.yunos.tvtaobao.tvsdk.widget.focus.FocusPositionManager>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/tui_dialog_alert_min_width" android:minHeight="@dimen/tui_alert_list_min_height">
+    <TextView android:textSize="@dimen/tui_text_size_24_sp" android:textColor="@color/tui_text_color_white_2" android:layout_gravity="center_vertical" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5"/>
+</LinearLayout>

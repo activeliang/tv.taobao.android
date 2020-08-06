@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear_layout" android:background="@drawable/ui3wares_tvtoast_linear_layout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/values_dp_400" android:minHeight="@dimen/values_dp_160" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/image_view" android:layout_width="@dimen/values_dp_76" android:layout_height="@dimen/values_dp_76" android:scaleType="centerCrop"/>
+        <TextView android:textSize="@dimen/values_dp_30" android:textColor="@android:color/white" android:id="@+id/text_view" android:paddingLeft="@dimen/values_dp_64" android:paddingRight="@dimen/values_dp_64" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

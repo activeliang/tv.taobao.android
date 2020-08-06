@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.goodlist.view.ItemLayoutForShop xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_68">
+    <ImageView android:id="@+id/shop_classify_imageview" android:visibility="visible" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_52" android:layout_marginLeft="@dimen/dp_0" android:layout_marginTop="@dimen/dp_0" android:adjustViewBounds="true"/>
+    <TextView android:textSize="@dimen/sp_27" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/shop_classify_textview" android:paddingLeft="@dimen/dp_0" android:paddingRight="@dimen/dp_0" android:layout_width="@dimen/dp_145" android:layout_height="@dimen/dp_52" android:text="全部宝贝"/>
+</com.yunos.tvtaobao.goodlist.view.ItemLayoutForShop>

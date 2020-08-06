@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/coupon_apply_toast_bg" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_160">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/coupon_apply_success_icon"/>
+        <TextView android:textSize="30sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/tv_apply_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/success_receive"/>
+    </LinearLayout>
+</LinearLayout>

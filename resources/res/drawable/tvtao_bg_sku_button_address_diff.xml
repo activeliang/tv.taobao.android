@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_focused="false">
+        <layer-list>
+            <item android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4">
+                <shape>
+                    <solid android:color="#994b5b6a"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/tvtao_v_bg_address_focus" android:left="@dimen/dp_4" android:top="@dimen/dp_4" android:right="@dimen/dp_4" android:bottom="@dimen/dp_4"/>
+            <item>
+                <shape>
+                    <stroke android:width="@dimen/dp_2" android:color="@color/colorWhite"/>
+                    <solid android:color="#00ffffff"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

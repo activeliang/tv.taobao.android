@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+        <com.powyin.scroll.widget.LoadProgressBar android:id="@+id/powyin_scroll_load_bar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="#ff777777" android:gravity="center" android:id="@+id/powyin_scroll_load_more" android:layout_width="match_parent" android:layout_height="match_parent" android:text="已经全部加载完毕"/>
+    </FrameLayout>
+</FrameLayout>

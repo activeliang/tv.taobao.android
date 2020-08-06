@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:paddingLeft="@raw/progress_curve_file_fq_l" android:paddingTop="@raw/progress_curve_file_h_l" android:paddingRight="@raw/progress_curve_file_fq_l" android:paddingBottom="@raw/progress_curve_file_h_l" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.taobao.windvane.webview.WVViewController android:id="@style/Base.TextAppearance.AppCompat.Medium.Inverse" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

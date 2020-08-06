@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.juhuasuan.view.ScrollHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/scroller" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.yunos.tvtaobao.juhuasuan.homepage.HomeIndexPageRelativeLayout android:id="@+id/container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/homeContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/first_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_100"/>
+            <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/second_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_580" android:layout_marginBottom="@dimen/dp_338"/>
+            <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/third_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_580" android:layout_marginBottom="@dimen/dp_15"/>
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_806" android:layout_marginTop="@dimen/dp_110"/>
+        </FrameLayout>
+    </FrameLayout>
+</com.yunos.tvtaobao.juhuasuan.view.ScrollHorizontalScrollView>

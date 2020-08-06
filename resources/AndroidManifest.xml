@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2110606011" android:versionName="6.6.11" package="rca.rc.tvtaobao" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="22"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.yunos.taobaotv.account.permission.TaobaoTvAccountService"/>
+    <uses-permission android:name="com.yunos.taobaotv.pay.permission.TaoOrder"/>
+    <uses-permission android:name="com.yunos.taobaotv.webbrowser.permission.ACTION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="com.aliyun.permission.TYID_MGR_SERVICE"/>
+    <uses-permission android:name="com.aliyun.permission.TYID_SERVICE"/>
+    <uses-permission android:name="com.taobao.statistic.permission.DEVICE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.yunos.taobaotv.update.permission.updateservice"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="yunos.tv.defensor.permission.EXTERNAL_INVOKE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.boot_tvshop_service"/>
+    <application android:theme="@style/ytm_style_launch" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="android.taobao.atlas.startup.AtlasBridgeApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="false" android:supportsRtl="true">
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.tvtao.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.tvtaobao.android.marketgames.dfw.act.GameDaFuWengActivity"/>
+        <activity android:theme="@style/ytm_style_launch_no_animation" android:name="com.yunos.tvtaobao.splashscreen.activity.RedirectActivity">
+            <intent-filter>
+                <action android:name="com.tvtaobao.action.StartApp"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ytm_style_start_launch" android:name="com.yunos.tvtaobao.splashscreen.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.splashscreen.activity.YunosOrDmodeActivity"/>
+        <service android:name="com.yunos.tvtaobao.splashscreen.service.LoadingService" android:enabled="true"/>
+        <activity android:name="com.yunos.tvtaobao.splashscreen.router.Page404Activity"/>
+        <activity android:theme="@style/ytm_style_launch_no_animation" android:name="com.yunos.tvtaobao.splashscreen.activity.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="home"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.yunos.tvtaobao.splashscreen.router.RouteService" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="home"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.taobao.taolive.FaceDetectorService" android:exported="false">
+            <intent-filter>
+                <action android:name="FaceDetectorService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.edge.pcdn.PcdnLiveService" android:exported="false" android:process=":PcdnLiveService"/>
+        <activity android:name="com.yunos.tvtaobao.homebundle.activity.HomeActivity" android:launchMode="singleTask" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.yunos.tvtaobao.biz.activity.UpdateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="update" android:host="yunos_tvtaobao_update"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.yunos.tvtaobao.biz.activity.NotForceUpdateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="not_force_update" android:host="yunos_tvtaobao_not_force_update"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ytm_sku_theme" android:name="com.yunos.tvtaobao.biz.widget.oldsku.SkuActivity"/>
+        <activity android:theme="@style/translucent_alpha_anim" android:name="com.yunos.tvtaobao.biz.widget.oldsku.SkuActivity2"/>
+        <service android:name="com.yunos.tvtaobao.biz.service.UpdateService" android:permission="com.yunos.taobaotv.update.permission.updateservice" android:exported="true">
+            <intent-filter>
+                <action android:name="com.yunos.taobaotv.update.updateservice.IAppUpdate"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.tvtaobao.voicesdk.services.YunosASRService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.yunos.tvtaobao.asr.startASRService"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.tvtaobao.voicesdk.provider.VoiceContentProvider" android:exported="true" android:authorities="com.yunos.tvtaobao.voiceProvider"/>
+        <service android:name="com.tvtaobao.voicesdk.services.TVTaoInterceptService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION.COM.YUNOS.TVTAOBAO.VOICE.INTERCEPT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.tvtaobao.voicesdk.services.BftvASRService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="intent.action.remotevoice.rca.rc.tvtaobao"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.bftv.fui.authentication.AuthenticationProvider" android:exported="true" android:authorities="com.bftv.voice.provider.rca.rc.tvtaobao"/>
+        <service android:name="com.tvtaobao.voicesdk.services.BftvService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="intent.action.user.rca.rc.tvtaobao"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.tvtaobao.voicesdk.services.TVTaoASRService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION.TVTAO.AIDL.VOICE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/MyDialogActivityStyle" android:name="com.tvtaobao.voicesdk.view.PromptDialog"/>
+        <service android:name="com.taobao.statistic.module.data.Yolanda" android:process=":utremote"/>
+        <service android:name="anetwork.channel.aidl.NetworkService" android:exported="false">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter"/>
+            </intent-filter>
+        </service>
+        <service android:name="mtopsdk.xstate.XStateService" android:exported="false">
+            <intent-filter>
+                <action android:name="mtopsdk.xstate.aidl.IXState"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.alibaba.analytics.AnalyticsService" android:exported="false" android:process=":channel"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="a9b4a8613b78d273f78578fa6482caa3"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.taobao.atlas.dexmerge.DexMergeService" android:process=":dexmerge">
+            <intent-filter>
+                <action android:name="com.taobao.atlas.dexmerge.DexMergeService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.atlas.update.AwoPatchReceiver">
+            <intent-filter>
+                <action android:name="com.taobao.atlas.intent.PATCH_APP"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.atlas.intent.DEX_PATCH_APP"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.atlas.intent.ROLLBACK_PATCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.atlas.intent.ROLLBACK_DEX_PATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.taobao.android.runtime.Dex2OatService" android:process=":dex2oat"/>
+        <activity android:name="android.taobao.atlas.remote.RemoteActivityManager$EmbeddedActivity"/>
+        <activity android:name="mtopsdk.extra.antiattack.CheckCodeValidateActivity" android:exported="false" android:taskAffinity="mtopsdk.extra" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="mtopsdk.mtop.antiattack.checkcode.validate.activity_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.offline.webview.BaseWebViewActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.offline.LoginWebViewActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.offline.webview.TokenWebViewActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.ali.auth.third.offline.LoginActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:name="com.ali.auth.third.offline.QrLoginConfirmActivity"/>
+        <activity android:theme="@style/ali_auth_qr_activity_style" android:name="com.ali.auth.third.offline.QrLoginActivity"/>
+        <activity android:theme="@style/ui3wares_TransparentWindow" android:name="com.tvtaobao.android.ui3.helper.ScreenCapture$CaptureAct" android:process=":capture" android:launchMode="singleTask"/>
+        <service android:name="com.tvtaobao.android.runtime.RtServices">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="c.t.a.r.rtservices.set"/>
+                <action android:name="c.t.a.r.rtservices.rmv"/>
+                <action android:name="c.t.a.r.rtservices.clr"/>
+                <action android:name="c.t.a.r.rtservices.cfgSet"/>
+                <action android:name="c.t.a.r.rtservices.cfgRmv"/>
+                <action android:name="c.t.a.r.rtservices.cfgClr"/>
+                <action android:name="c.t.a.r.rtservices.broadcast"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ali.user.sso.internal.AuthenticationService" android:permission="android.permission.ACCOUNT_MANAGER" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/taobao_authenticator"/>
+            <meta-data android:name="com.taobao.android.sso.Version" android:value="@integer/sso_version_code"/>
+        </service>
+        <activity android:theme="@style/AliMember.Base.AppTheme" android:name="com.ali.user.open.core.webview.BaseWebViewActivity"/>
+        <activity android:name="com.alipay.sdk.app.H5AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/AliMember.Base.AppTheme" android:name="com.ali.user.open.tbauth.ui.TbAuthWebViewActivity" android:multiprocess="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|navigation|orientation|screenSize">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.ali.user.open.tbauth.ui.TbAuthActivity" android:multiprocess="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.ali.user.open.tbauth.ui.ICBUAuthActivity" android:multiprocess="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <receiver android:name="com.ali.user.open.receiver.SessionSyncReceiver">
+            <intent-filter>
+                <action android:name="aliuser_sync_session"/> //此处必需指定action，否则监听不到\10
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/AliMember.TransparentTheme" android:name="com.ali.user.open.ucc.webview.UccWebViewActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboardHidden|navigation|orientation|screenSize">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.ali.user.open.ucc.ui.UccActivity" android:multiprocess="true" android:configChanges="keyboardHidden|navigation|orientation">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.CommonActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.RecommendActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.RelativeRecommendActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.ChaoshiActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.TodayGoodsActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.ChongzhiActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.OrderListActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.PointActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.ShopBlizActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.TakeOutWebActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.h5.commonbundle.activity.AddressWebActivity" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.h5.commonbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.MyFollowActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.MyTaoBaoActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.AddressActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.CouponActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.CollectsActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.NewMyTaoBaoActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.mytaobao.activity.MyFootMarkActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.mytaobao"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.search.activity.SearchActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.search"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.search.activity.KeySearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="keysearch"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.search"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.search.activity.SearchResultActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.search"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.newcart.ui.activity.GuessLikeActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.newcart.ui.activity.NewShopCartListActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleGuesslike" android:name="com.yunos.tvtaobao.newcart.ui.activity.FindSameActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleBuyRebate" android:name="com.yunos.tvtaobao.payresult.PayResultBuyRebateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="buy_rebate" android:host="yunos_tvtaobao_buy_rebate"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.yunos.tvtaobao.newcart.ui.activity.CouponActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.yunos.tvtaobao.payment.logout.LogoutActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.payresult.PayResultActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:theme="@style/translucent" android:name="com.yunos.tvtaobao.newsku.TvTaoSkuActivity" android:exported="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.errorpage.ErrorPageActivity" android:exported="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.newcart"/>
+        </activity>
+        <receiver android:name="com.yunos.tvtaobao.tvshoppingbundle.broadcast.TvShopBootBroadcast" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.yunos.tvshopping.broadcast.boot_tvshop_service"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tvshoppingbundle"/>
+        </receiver>
+        <receiver android:name="com.yunos.tvtaobao.tvshoppingbundle.broadcast.SmileRecognitionBroadcast" android:exported="true">
+            <intent-filter>
+                <action android:name="com.yunos.tv.smile.recognition"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tvshoppingbundle"/>
+        </receiver>
+        <service android:name="com.yunos.tvtaobao.tvshoppingbundle.service.TvShopService" android:enabled="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tvshoppingbundle"/>
+        </service>
+        <activity android:name="com.yunos.tvtaobao.zhuanti.activity.DarenActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.zhuanti"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.zhuanti.activity.DaRenTVActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.zhuanti"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.zhuanti.activity.NewTvBuyActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.zhuanti"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.zhuanti.activity.TvBuyActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.zhuanti"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.zhuanti.activity.TaobaoTVActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.zhuanti"/>
+        </activity>
+        <activity android:theme="@style/marketgames_style_launch_no_animation" android:name="com.tvtaobao.android.games.WelcomeActivity">
+            <meta-data android:name="bundleLocation" android:value="com.tvtaobao.android.games"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.flashsale.activity.MainActivity" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="flashsale"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.flashsale"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.flashsale.activity.RecommendActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.flashsale"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.PreloadActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.JhsActivity" android:configChanges="keyboardHidden|orientation">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.HomeCategoryActivity" android:configChanges="keyboardHidden|orientation">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.HomeActivity" android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.BrandHomeActivity" android:configChanges="keyboardHidden|orientation">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.juhuasuan.activity.BrandDetailActivity" android:configChanges="keyboardHidden|orientation">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.juhuasuan"/>
+        </activity>
+        <activity android:theme="@style/ytm_ThemeMenuActivity" android:name="com.yunos.tvtaobao.menu.activity.MenuActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.menu"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.goodlist.activity.GoodListActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.goodlist"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.goodlist.activity.ShopActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.goodlist"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.answer.activity.HQIndexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.answer"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.answer.activity.HQLiveActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.answer"/>
+        </activity>
+        <activity android:theme="@style/ytm_sku_theme" android:name="com.yunos.tvtaobao.elem.activity.shop.ElemeShopActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutOrderDetailActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutOrderListActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.home.TakeoutHomeActivity" android:launchMode="singleTask">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.TestRouteActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutCouponActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutMineActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutCreateOrderActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemBindGuideActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemAuthActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemBindActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemBindAgreementActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemRegisterAndBindActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.elem.activity.bind.ElemRegisterAndBindAgreementActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.takeoutbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.live.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="tvlive"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.live"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.live.activity.TMallLiveActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.live"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.live.activity.TBaoLiveActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.live"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.live.activity.TestLiveActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.live"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tvtaobao" android:host="voice"/>
+            </intent-filter>
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:theme="@style/translucent" android:name="com.yunos.voice.activity.CreateOrderActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.GoodsSearchActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.VoiceVideoDemoActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:theme="@style/translucent" android:name="com.yunos.voice.activity.LoginAuthActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.NoviceGuideActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.BillQueryActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.LogisticsQueryActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.OrderDeliveryActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.FusionSearchActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.voice.activity.TakeOutSearchActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.voice"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.tradelink.activity.AddressEditActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tradelink"/>
+        </activity>
+        <activity android:theme="@style/ytm_style_buildorder" android:name="com.yunos.tvtaobao.tradelink.activity.BuildOrderActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tradelink"/>
+        </activity>
+        <activity android:theme="@style/ytm_style_buildorder" android:name="com.yunos.tvtaobao.tradelink.activity.NewBuildOrderActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tradelink"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.tradelink.activity.CreateOrderActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.tradelink"/>
+        </activity>
+        <activity android:theme="@style/ytbv_CustomDialog" android:name="com.yunos.tvtaobao.detailbundle.activity.DetailEvaluateActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:theme="@style/ytbv_CustomDialog" android:name="com.yunos.tvtaobao.detailbundle.activity.SeckKillDetailFullDescActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:name="com.yunos.tvtaobao.detailbundle.activity.NewDetailActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.yunos.tvtaobao.detailbundle.activity.CouponActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.yunos.tvtaobao.detailbundle.activity.ShareActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.yunos.tvtaobao.detailbundle.activity.HaierShareActivity">
+            <meta-data android:name="bundleLocation" android:value="com.yunos.tvtaobao.detailbundle"/>
+        </activity>
+        <activity android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_Activity"/>
+        <service android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_Service"/>
+        <provider android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_Provider" android:authorities="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_Provider"/>
+        <activity android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_channel_Activity" android:process=":channel"/>
+        <service android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_channel_Service" android:process=":channel"/>
+        <provider android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_channel_Provider" android:process=":channel" android:authorities="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_channel_Provider"/>
+        <activity android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_utremote_Activity" android:process=":utremote"/>
+        <service android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_utremote_Service" android:process=":utremote"/>
+        <provider android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_utremote_Provider" android:process=":utremote" android:authorities="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_utremote_Provider"/>
+        <activity android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_PcdnLiveService_Activity" android:process=":PcdnLiveService"/>
+        <service android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_PcdnLiveService_Service" android:process=":PcdnLiveService"/>
+        <provider android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_PcdnLiveService_Provider" android:process=":PcdnLiveService" android:authorities="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_PcdnLiveService_Provider"/>
+        <activity android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_capture_Activity" android:process=":capture"/>
+        <service android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_capture_Service" android:process=":capture"/>
+        <provider android:name="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_capture_Provider" android:process=":capture" android:authorities="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_rca_rc_tvtaobao_capture_Provider"/>
+        <meta-data android:name="REAL_APPLICATION" android:value="com.yunos.tvtaobao.AtlasApplication"/>
+        <meta-data android:name="multidex_enable" android:value="true"/>
+    </application>
+</manifest>

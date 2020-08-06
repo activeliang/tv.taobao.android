@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/powyin_swipe_over_head" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <View android:layout_width="match_parent" android:layout_height="6dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="30dp">
+        <com.powyin.scroll.widget.CircleViewBac android:layout_gravity="center" android:id="@+id/powyin_swipe_image_info" android:layout_width="25dp" android:layout_height="25dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/powyin_swipe_refresh" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/powyin_scroll_progress_circle"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/powyin_swipe_ok" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/powyin_scroll_progress_ok"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/powyin_swipe_error_auto_hide" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/powyin_scroll_progress_error_auto_hide"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/powyin_swipe_error_fixed" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/powyin_scroll_progress_error_fixed"/>
+    </FrameLayout>
+    <TextView android:textSize="13sp" android:textColor="#707070" android:gravity="center" android:id="@+id/powyin_swipe_text_info" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="松开刷新"/>
+</LinearLayout>
